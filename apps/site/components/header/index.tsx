@@ -1,6 +1,7 @@
 'use client'
 import { useGlobalContext } from '@/context/store'
 import React from 'react'
+import { setCookie } from 'cookies-next'
 
 const Header = () => {
    const { theme, setTheme, AllTheme } = useGlobalContext()
@@ -49,6 +50,7 @@ const Header = () => {
                               className={`capitalize w-full flex mb-2 rounded-md last-of-type:mb-0 justify-between items-center px-2 py-2 hover:bg-base-300 transition-all duration-300 cursor-pointer`}
                               onClick={() => {
                                  setTheme(item)
+                                 setCookie('theme', item)
                               }}
                            >
                               <span className="text-base-content flex items-center gap-2">
