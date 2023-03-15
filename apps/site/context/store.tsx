@@ -19,37 +19,7 @@ const GlobalContext = React.createContext<contextProps>({
 
 export const GlobalProvider = ({ children }: Props) => {
    const [theme, setTheme] = React.useState('light')
-   const AllTheme = [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-   ]
+   const AllTheme = ['light', 'dark']
 
    return (
       <GlobalContext.Provider value={{ theme, setTheme, AllTheme }}>
