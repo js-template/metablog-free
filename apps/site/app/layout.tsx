@@ -1,6 +1,17 @@
 'use client'
-import { GlobalProvider, useGlobalContext } from '@/context/store'
 import './globals.css'
+import React from 'react'
+import { Plus_Jakarta_Sans } from 'next/font/google'
+import { GlobalProvider } from '@/context/store'
+import { Providers } from './providers'
+
+const Jakarta_Sans = Plus_Jakarta_Sans({
+   weight: ['400', '500', '600', '700'],
+   style: ['normal', 'italic'],
+   subsets: ['latin'],
+   display: 'swap',
+   variable: '--font-plus-jakarta-sans',
+})
 
 export default function RootLayout({
    children,
@@ -15,10 +26,15 @@ export default function RootLayout({
 }
 
 const Body = ({ children }: { children: React.ReactNode }) => {
-   const { theme } = useGlobalContext()
    return (
-      <html lang="en" data-theme={theme}>
-         <body>{children}</body>
+      <html
+         lang="en"
+         className={`${Jakarta_Sans.variable} font-sans`}
+         suppressHydrationWarning
+      >
+         <body>
+            <Providers>{children}</Providers>
+         </body>
       </html>
    )
 }

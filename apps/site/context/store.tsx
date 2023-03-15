@@ -1,39 +1,30 @@
 'use client'
 import React from 'react'
-import { getCookie, setCookie } from 'cookies-next'
 
 type Props = {
    children: React.ReactNode
 }
 
 interface contextProps {
-   theme: string
-   setTheme: (theme: string) => void
-   AllTheme: string[]
+   value: string
+   setValue: React.Dispatch<React.SetStateAction<string>>
 }
 
 const GlobalContext = React.createContext<contextProps>({
-   theme: 'light',
-   setTheme: () => {},
-   AllTheme: [],
+   value: 'light',
+   setValue: () => {},
 })
 
 export const GlobalProvider = ({ children }: Props) => {
-   const [theme, setTheme] = React.useState<string>('light')
-   const AllTheme = ['light', 'dark']
-
-   // theme name is stored in cookies
-   React.useEffect(() => {
-      const theme = getCookie('theme') || ('light' as string)
-      if (theme) {
-         setTheme(theme as string)
-         // set the theme in cookies
-         setCookie('theme', theme as string)
-      }
-   }, [])
+   const [value, setValue] = React.useState('light')
 
    return (
-      <GlobalContext.Provider value={{ theme, setTheme, AllTheme }}>
+      <GlobalContext.Provider
+         value={{
+            value,
+            setValue,
+         }}
+      >
          {children}
       </GlobalContext.Provider>
    )

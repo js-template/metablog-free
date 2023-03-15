@@ -1,10 +1,18 @@
 'use client'
-import { useGlobalContext } from '@/context/store'
-import React from 'react'
-import { setCookie } from 'cookies-next'
+import React, { useEffect, useState } from 'react'
+import { useTheme } from 'next-themes'
 
 const Header = () => {
-   const { theme, setTheme, AllTheme } = useGlobalContext()
+   const { themes, theme, setTheme } = useTheme()
+
+   /*
+     Fixed the hydration issue by using a state to check if the component is mounted
+   */
+   const [mounted, setMounted] = useState(false)
+
+   useEffect(() => {
+      setMounted(true)
+   }, [])
 
    return (
       <div className="shadow-md py-2">
@@ -43,18 +51,17 @@ const Header = () => {
                         tabIndex={0}
                         className="grid dropdown-content p-3 shadow-lg mt-5 bg-base-200 rounded-lg w-52 max-h-80 overflow-x-auto"
                      >
-                        {AllTheme.map((item) => (
+                        {themes.map((item) => (
                            <li
                               data-theme={item}
                               key={item}
                               className={`capitalize w-full flex mb-2 rounded-md last-of-type:mb-0 justify-between items-center px-2 py-2 hover:bg-base-300 transition-all duration-300 cursor-pointer`}
                               onClick={() => {
                                  setTheme(item)
-                                 setCookie('theme', item)
                               }}
                            >
-                              <span className="text-base-content flex items-center gap-2">
-                                 {theme === item && (
+                              <div className="text-base-content flex items-center gap-2">
+                                 {mounted && theme === item && (
                                     <svg
                                        xmlns="http://www.w3.org/2000/svg"
                                        width="16"
@@ -66,8 +73,8 @@ const Header = () => {
                                        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path>
                                     </svg>
                                  )}
-                                 {item}
-                              </span>
+                                 <span>{item}</span>
+                              </div>
                               <div className="flex flex-shrink-0 flex-wrap gap-1 h-full">
                                  <div className="bg-primary w-2 rounded"></div>{' '}
                                  <div className="bg-secondary w-2 rounded"></div>{' '}

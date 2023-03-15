@@ -1,9 +1,15 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
    mode: 'jit',
    content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
    theme: {
-      extend: {},
+      extend: {
+         fontFamily: {
+            sans: ['var(--font-plus-jakarta-sans)', ...fontFamily.sans],
+         },
+      },
    },
 
    // add daisyUI plugin
@@ -20,7 +26,7 @@ module.exports = {
                'primary-content': '#FFFFFF',
                secondary: '#181A2A',
                'secondary-focus': '#2563EB',
-               'secondary-content': '#ffffff',
+               'secondary-content': '#242535',
                accent: '#37cdbe',
                'accent-focus': '#2aa79b',
                'accent-content': '#ffffff',
@@ -43,7 +49,7 @@ module.exports = {
                'primary-content': '#FFFFFF',
                secondary: '#FFFFFF',
                'secondary-focus': '#2563EB',
-               'secondary-content': '#ffffff',
+               'secondary-content': '#242535',
                accent: '#37cdbe',
                'accent-focus': '#2aa79b',
                'accent-content': '#ffffff',

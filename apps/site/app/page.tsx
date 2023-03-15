@@ -1,10 +1,7 @@
 import Footer from '@/components/footer'
 import Header from '@/components/header'
-import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import { Fragment } from 'react'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
    title: 'Create Next App',
@@ -34,7 +31,9 @@ export default function Home() {
                <div className="card-body">
                   <h2 className="card-title text-primary">
                      Shoes!
-                     <div className="badge badge-secondary">NEW</div>
+                     <div className="badge bg-primary text-primary-content">
+                        NEW
+                     </div>
                   </h2>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div className="card-actions justify-end">
