@@ -32,7 +32,7 @@ export default function Home() {
                   />
                </figure>
                <div className="card-body">
-                  <h2 className="card-title">
+                  <h2 className="card-title text-primary">
                      Shoes!
                      <div className="badge badge-secondary">NEW</div>
                   </h2>
