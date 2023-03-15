@@ -5,6 +5,12 @@ module.exports = {
    mode: 'jit',
    content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
    theme: {
+      screens: {
+         sm: '576px',
+         md: '768px',
+         lg: '992px',
+         xl: '1216px',
+      },
       extend: {
          fontFamily: {
             sans: ['var(--font-plus-jakarta-sans)', ...fontFamily.sans],

@@ -4,7 +4,7 @@ import React from 'react'
 const NewsLetter = () => {
    return (
       <div className="w-full">
-         <div className="bg-base-100 py-8 px-9 ">
+         <div className="bg-base-100 py-8 px-9 rounded-xl">
             <h5 className="text-center text-xl font-semibold text-secondary">
                Weekly Newsletter
             </h5>
@@ -15,9 +15,8 @@ const NewsLetter = () => {
                <input
                   placeholder="Your Email"
                   type="email"
-                  className="px-4 py-2 border border-base-content w-full outline-none mt-7 text-base placeholder:text-base bg-base-100 "
-               />{' '}
-               <br />
+                  className="px-4 py-2 border border-base-content rounded-md w-full outline-none mt-7 text-secondary placeholder:text-base bg-base-100 "
+               />
                <Image
                   src="/email.png"
                   alt="email"
@@ -28,7 +27,6 @@ const NewsLetter = () => {
                />
             </div>
             <button className="bg-primary py-3 text-center font-medium w-full rounded-md mt-2 text-white">
-               {' '}
                Subscribe
             </button>
          </div>

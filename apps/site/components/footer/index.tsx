@@ -8,8 +8,8 @@ const Footer = () => {
       <div>
          <div className="bg-base-200 px-5 md:px-0">
             <div className="container mx-auto">
-               <footer className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36 py-16">
-                  <div>
+               <footer className=" grid grid-cols-12 gap-5 py-16">
+                  <div className="col-span-12 lg:col-span-3">
                      <span className="text-lg font-semibold text-secondary font-sans">
                         About
                      </span>
@@ -19,7 +19,6 @@ const Footer = () => {
                         magna aliqua. Ut enim ad minim veniam
                      </p>
                      <h6 className="mt-6">
-                        {' '}
                         <span className=" font-semibold text-secondary">
                            Email :
                         </span>
@@ -27,8 +26,7 @@ const Footer = () => {
                            info@jstemplate.net
                         </span>
                      </h6>
-                     <h6>
-                        {' '}
+                     <h6 className="mt-1">
                         <span className=" font-semibold text-secondary">
                            Phone :
                         </span>
@@ -37,7 +35,7 @@ const Footer = () => {
                         </span>
                      </h6>
                   </div>
-                  <div className="flex w-full justify-between lg:justify-start gap-20 px-5">
+                  <div className="flex justify-between lg:justify-center lg:gap-20 col-span-12 lg:col-span-5">
                      <div>
                         <span className=" text-secondary text-lg font-semibold">
                            Quick Link
@@ -46,7 +44,7 @@ const Footer = () => {
                            {FooterDataOne.map((item: any, index: number) => (
                               <div key={index}>
                                  <Link href={item.link}>
-                                    <p className="link link-hover text-base text-base-content">
+                                    <p className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300">
                                        {item.name}
                                     </p>
                                  </Link>
@@ -62,7 +60,7 @@ const Footer = () => {
                            {FooterDataTwo.map((item: any, index: number) => (
                               <div key={index}>
                                  <Link href={item.link}>
-                                    <p className="link link-hover text-base text-base-content">
+                                    <p className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300">
                                        {item.name}
                                     </p>
                                  </Link>
@@ -71,14 +69,13 @@ const Footer = () => {
                         </div>
                      </div>
                   </div>
-                  <div>
+                  <div className="col-span-12 lg:col-span-4">
                      <NewsLetter />
                   </div>
                </footer>
                <div className=" border border-base-300"></div>
-               {/* Copyright */}
-               <div className=" flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-12 bg-base-200">
-                  <div className=" flex items-start gap-2.5">
+               <div className=" flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-8 bg-base-200">
+                  <div className="flex items-center gap-2.5">
                      <div>
                         <svg
                            width="48"
@@ -116,21 +113,18 @@ const Footer = () => {
                   </div>
                   <div className=" flex items-center gap-4">
                      <Link href="/">
-                        <h6 className="text-base border-r border-secondary-content pr-4 text-base-content">
-                           {' '}
+                        <h6 className="text-base border-r border-secondary-content pr-4 text-base-content hover:text-primary transition hover:duration-300">
                            Terms of Use
                         </h6>
                      </Link>
                      <Link href="/">
-                        <h6 className="text-base border-r border-secondary-content pr-4 text-base-content">
-                           {' '}
-                           Terms of Use
+                        <h6 className="text-base border-r border-secondary-content pr-4 text-base-content hover:text-primary transition hover:duration-300">
+                           Privacy Policy
                         </h6>
                      </Link>
                      <Link href="/">
-                        <h6 className="text-base text-base-content">
-                           {' '}
-                           Terms of Use
+                        <h6 className="text-base text-base-content hover:text-primary transition hover:duration-300">
+                           Cookie Policy
                         </h6>
                      </Link>
                   </div>
