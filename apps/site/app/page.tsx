@@ -1,3 +1,5 @@
+import Advertisement from '@/components/advertisement/Advertisement'
+import BannerCard from '@/components/card/BannerCard'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Image from 'next/image'
@@ -15,32 +17,12 @@ export default function Home() {
          <Header />
 
          {/* Page Body */}
-         <main className="min-h-screen py-10 px-5 flex flex-wrap justify-center items-center gap-8">
-            <div className="card w-96 bg-base-100 shadow-xl">
-               <figure>
-                  <Image
-                     src="https://placehold.it/600x400"
-                     alt="Shoes"
-                     width={600}
-                     height={400}
-                     priority={true}
-                     placeholder="blur"
-                     blurDataURL="https://placehold.it/600x400"
-                  />
-               </figure>
-               <div className="card-body">
-                  <h2 className="card-title text-primary">
-                     Shoes!
-                     <div className="badge bg-primary text-primary-content">
-                        NEW
-                     </div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                     <div className="badge badge-outline">Fashion</div>
-                     <div className="badge badge-outline">Products</div>
-                  </div>
-               </div>
+         <main className="container mx-auto">
+            <div>
+               <BannerCard />
+            </div>
+            <div className=" mt-36">
+              
             </div>
          </main>
 

@@ -15,6 +15,9 @@ module.exports = {
          fontFamily: {
             sans: ['var(--font-plus-jakarta-sans)', ...fontFamily.sans],
          },
+         boxShadow: {
+            dropShadowMd: "0px 12px 24px -6px rgba(24, 26, 42, 0.12)",
+          },
       },
    },
 
@@ -27,25 +30,7 @@ module.exports = {
       themes: [
          {
             light: {
-               ...require('daisyui/src/colors/themes')['[data-theme=light]'],
-               primary: '#4B6BFB',
-               'primary-content': '#FFFFFF',
-               secondary: '#181A2A',
-               'secondary-focus': '#2563EB',
-               'secondary-content': '#242535',
-               accent: '#37cdbe',
-               'accent-focus': '#2aa79b',
-               'accent-content': '#ffffff',
-               natural: '#181A2A',
-               'natural-content': '#E8E8EA',
-               'base-100': '#FFFFFF',
-               'base-200': '#F6F6F7',
-               'base-300': '#E8E8EA',
-               'base-content': '#97989F',
-               info: '#2094f3',
-               success: '#009485',
-               warning: '#ff9900',
-               error: '#ff5724',
+               ...require('daisyui/src/colors/themes')['[data-theme=corporate]']
             },
          },
          {
