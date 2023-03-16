@@ -1,29 +1,112 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
-
+import Image from 'next/image'
+import Link from 'next/link'
+import { headerData } from '@/data/headerData'
 const Header = () => {
    const { themes, theme, setTheme } = useTheme()
-
+   const [lightImage, setLightImage] = useState(true)
    /*
      Fixed the hydration issue by using a state to check if the component is mounted
    */
    const [mounted, setMounted] = useState(false)
-
    useEffect(() => {
       setMounted(true)
    }, [])
 
+   /*
+    set different logo based on state change
+   */
+
+   useEffect(() => {
+      if (true) {
+         setLightImage(true)
+      }
+      if (theme === 'dark') {
+         setLightImage(false)
+      }
+   }, [theme])
+
    return (
-      <div className="shadow-md py-2">
-         <div className="container mx-auto px-4">
-            <div className="navbar bg-base-100">
-               <div className="flex-1">
-                  <a className="btn btn-ghost normal-case text-xl">
-                     Daisy Setup
-                  </a>
+      <div className="py-8">
+         <div className="container mx-auto">
+            <div className="navbar grid grid-cols-12">
+               <div className="col-span-3">
+                  {lightImage ? (
+                     <Link href="/">
+                        <Image
+                           src="/logoLight.png"
+                           alt="site-logo"
+                           width={158}
+                           height={36}
+                           priority={true}
+                        />
+                     </Link>
+                  ) : (
+                     <Link href="/">
+                        <Image
+                           src="/logoDark.png"
+                           alt="site-logo"
+                           width={158}
+                           height={36}
+                           priority={true}
+                        />
+                     </Link>
+                  )}
                </div>
-               <div className="flex-none">
+               <div className=' col-span-6'>
+                  <div className=" w-full flex items-center justify-center gap-10">
+                     {headerData.map((item: any, index: number) => (
+                        <div key={index}>
+                           <Link href={item.link}>
+                              <p className="link link-hover text-base text-secondary hover:text-primary transition hover:duration-300">
+                                 {item.name}
+                              </p>
+                           </Link>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+               <div className="flex items-center justify-center gap-10 col-span-3">
+                  <div className=" bg-base-300 pl-4 pr-3 py-2 rounded-md flex items-center gap-4">
+                     <input
+                        type="text"
+                        className=" outline-none bg-base-300 w-28"
+                        placeholder="Search"
+                     />
+                     <div>
+                        <svg
+                           width="16"
+                           height="16"
+                           viewBox="0 0 16 16"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M6.90906 2C5.93814 2 4.98903 2.28791 4.18174 2.82733C3.37444 3.36674 2.74524 4.13343 2.37368 5.03045C2.00213 5.92746 1.90491 6.91451 2.09433 7.86677C2.28375 8.81904 2.75129 9.69375 3.43783 10.3803C4.12438 11.0668 4.99909 11.5344 5.95135 11.7238C6.90362 11.9132 7.89067 11.816 8.78768 11.4444C9.6847 11.0729 10.4514 10.4437 10.9908 9.63639C11.5302 8.8291 11.8181 7.87998 11.8181 6.90906C11.818 5.60712 11.3008 4.35853 10.3802 3.43792C9.45959 2.51731 8.211 2.00008 6.90906 2Z"
+                              stroke="#52525B"
+                              strokeWidth="1.5"
+                              strokeMiterlimit="10"
+                           />
+                           <path
+                              d="M10.5715 10.5716L14 14"
+                              stroke="#52525B"
+                              strokeWidth="1.5"
+                              strokeMiterlimit="10"
+                              strokeLinecap="round"
+                           />
+                        </svg>
+                     </div>
+                  </div>
+                  <div>
+                     <input
+                        type="checkbox"
+                        className="toggle rounded-full mt-2 w-12 h-7"
+                     />
+                  </div>
+               </div>
+               {/* <div className="flex-none">
                   <div className="dropdown dropdown-end">
                      <label
                         tabIndex={0}
@@ -85,7 +168,7 @@ const Header = () => {
                         ))}
                      </ul>
                   </div>
-               </div>
+               </div> */}
             </div>
          </div>
       </div>
