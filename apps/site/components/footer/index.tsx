@@ -111,12 +111,12 @@ const Footer = () => {
                   </div>
                   <div className=" flex items-center gap-4">
                      <Link href="/">
-                        <h6 className="text-base border-r border-secondary-content pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
+                        <h6 className="text-base border-r border-base-300 pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
                            Terms of Use
                         </h6>
                      </Link>
                      <Link href="/">
-                        <h6 className="text-base border-r border-secondary-content pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
+                        <h6 className="text-base border-r border-base-300 pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
                            Privacy Policy
                         </h6>
                      </Link>

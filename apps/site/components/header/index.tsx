@@ -40,7 +40,7 @@ const Header = () => {
                      {headerData.map((item: any, index: number) => (
                         <div key={index}>
                            <Link href={item.link}>
-                              <p className="link link-hover text-base text-secondary hover:text-primary transition hover:duration-300">
+                              <p className="link link-hover text-base text-neutral hover:text-primary transition hover:duration-300">
                                  {item.name}
                               </p>
                            </Link>
@@ -50,14 +50,15 @@ const Header = () => {
                </div>
                <div className="flex items-center justify-center gap-10 col-span-3">
                   {/* Search Block */}
-                  <div className=" bg-base-300 pl-4 pr-3 py-2 rounded-md flex items-center gap-4">
+                  <div className=" bg-base-200 pl-4 pr-3 py-2 rounded-md flex items-center gap-4">
                      <input
                         type="text"
-                        className=" outline-none bg-base-300 w-28"
+                        className=" outline-none text-neutral bg-base-200 w-28"
                         placeholder="Search"
                      />
                      <div>
                         <svg
+                        className='cursor-pointer'
                            width="16"
                            height="16"
                            viewBox="0 0 16 16"
