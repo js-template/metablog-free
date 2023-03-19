@@ -1,25 +1,20 @@
-import Image from 'next/image'
 import React from 'react'
 
 const BannerCard = () => {
    return (
       <section>
          <div className="relative rounded-xl">
-            <Image
-               src="/image1.png"
-               alt="Banner Image"
-               width={1216}
-               height={600}
-               priority={true}
-            />
-            <div className="absolute -bottom-16 left-14 rounded-xl p-10 bg-base-100 w-6/12 shadow-dropShadowMd">
-               <button className=" text-base-100 px-2.5 py-1 bg-primary text-sm rounded-md">
+            <img width="1216" height="600" src="/image1.png" />
+            <div className="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-dropShadowMd">
+               <button className=" text-white px-2.5 py-1 bg-primary text-sm rounded-md">
                   Technology
                </button>
-               <h1 className=" text-neutral font-semibold text-4xl leading-10 mt-4">
-                  The Impact of Technology on the Workplace: How Technology is
-                  Changing
-               </h1>
+               <a href="/">
+                  <h1 className=" text-neutral font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 mt-4">
+                     The Impact of Technology on the Workplace: How Technology
+                     is Changing
+                  </h1>
+               </a>
                <div className=" mt-6 flex items-center gap-5">
                   <div className=" flex items-center gap-3">
                      <div className="avatar">
@@ -27,11 +22,11 @@ const BannerCard = () => {
                            <img src="/image1.png" />
                         </div>
                      </div>
-                     <p className=" text-base-content text-base font-medium">
+                     <p className=" text-secondary-focus text-base font-medium">
                         Jason Francisco
                      </p>
                   </div>
-                  <p className=" text-base-content text-base">
+                  <p className="text-secondary-focus text-base">
                      August 20, 2022
                   </p>
                </div>
