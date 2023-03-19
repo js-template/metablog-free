@@ -5,7 +5,7 @@ const BannerCard = () => {
       <section>
          <div className="relative rounded-xl">
             <img width="1216" height="600" src="/image1.png" />
-            <div className="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-dropShadowMd">
+            <div className="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-md">
                <button className=" text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md">
                   Technology
                </button>
