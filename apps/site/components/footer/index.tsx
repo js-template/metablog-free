@@ -10,41 +10,39 @@ const Footer = () => {
             <div className="container mx-auto">
                <footer className=" grid grid-cols-12 gap-5 py-16">
                   <div className="col-span-12 lg:col-span-3">
-                     <span className="text-lg font-semibold text-secondary font-sans">
+                     <span className="text-lg font-semibold text-neutral font-sans">
                         About
                      </span>
-                     <p className=" mt-3 text-base text-base-content font-sans">
+                     <p className=" mt-3 text-base text-secondary">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam
                      </p>
                      <h6 className="mt-6">
-                        <span className=" font-semibold text-secondary">
+                        <span className=" font-semibold text-neutral">
                            Email :
                         </span>
-                        <span className="text-base-content">
+                        <span className="text-secondary">
                            info@jstemplate.net
                         </span>
                      </h6>
                      <h6 className="mt-1">
-                        <span className=" font-semibold text-secondary">
+                        <span className=" font-semibold text-neutral">
                            Phone :
                         </span>
-                        <span className="text-base-content">
-                           880 123 456 789
-                        </span>
+                        <span className="text-secondary">880 123 456 789</span>
                      </h6>
                   </div>
                   <div className="flex justify-between lg:justify-center lg:gap-20 col-span-12 lg:col-span-5">
                      <div>
-                        <span className=" text-secondary text-lg font-semibold">
+                        <span className=" text-neutral text-lg font-semibold">
                            Quick Link
                         </span>
                         <div className=" flex flex-col gap-y-2 mt-6">
                            {FooterDataOne.map((item: any, index: number) => (
                               <div key={index}>
                                  <Link href={item.link}>
-                                    <p className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300">
+                                    <p className="link link-hover text-base text-secondary-focus hover:text-primary transition hover:duration-300">
                                        {item.name}
                                     </p>
                                  </Link>
@@ -53,14 +51,14 @@ const Footer = () => {
                         </div>
                      </div>
                      <div>
-                        <span className=" text-secondary text-lg font-semibold">
+                        <span className=" text-neutral text-lg font-semibold">
                            Category
                         </span>
                         <div className=" flex flex-col gap-y-2 mt-6">
                            {FooterDataTwo.map((item: any, index: number) => (
                               <div key={index}>
                                  <Link href={item.link}>
-                                    <p className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300">
+                                    <p className="link link-hover text-base text-secondary-focus hover:text-primary transition hover:duration-300">
                                        {item.name}
                                     </p>
                                  </Link>
@@ -103,27 +101,27 @@ const Footer = () => {
                         </svg>
                      </div>
                      <div>
-                        <h5 className=" text-xl  text-secondary">
+                        <h5 className=" text-xl text-neutral-focus">
                            Meta<span className=" font-bold">Blog</span>
                         </h5>
-                        <p className=" mt-0.5 text-secondary text-base">
+                        <p className=" mt-0.5 text-neutral-focus text-base">
                            © JS Template 2023. All Rights Reserved.
                         </p>
                      </div>
                   </div>
                   <div className=" flex items-center gap-4">
                      <Link href="/">
-                        <h6 className="text-base border-r border-secondary-content pr-4 text-base-content hover:text-primary transition hover:duration-300">
+                        <h6 className="text-base border-r border-base-300 pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
                            Terms of Use
                         </h6>
                      </Link>
                      <Link href="/">
-                        <h6 className="text-base border-r border-secondary-content pr-4 text-base-content hover:text-primary transition hover:duration-300">
+                        <h6 className="text-base border-r border-base-300 pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
                            Privacy Policy
                         </h6>
                      </Link>
                      <Link href="/">
-                        <h6 className="text-base text-base-content hover:text-primary transition hover:duration-300">
+                        <h6 className="text-base text-neutral-focus hover:text-primary transition hover:duration-300">
                            Cookie Policy
                         </h6>
                      </Link>

@@ -21,8 +21,8 @@ export default function Home() {
             <div>
                <BannerCard />
             </div>
-            <div className=" mt-36">
-              
+            <div className=" mt-36 mb-20">
+               <Advertisement />
             </div>
          </main>
 
