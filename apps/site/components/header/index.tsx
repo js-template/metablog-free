@@ -4,9 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { headerData } from '@/data/headerData'
 import useMode from '@/utils/themeMode'
+import SidebarLayout from '../SidebarLayout/SidebarLayout'
 
 const Header = () => {
    const { lightMode, theme, setTheme } = useMode()
+
+   const [sidebarOpen, setSidebarOpen] = React.useState<boolean>(false)
 
    return (
       <div className="py-5">
@@ -35,7 +38,7 @@ const Header = () => {
                      </Link>
                   )}
                </div>
-               <div className=" col-span-6">
+               <div className="hidden xl:block col-span-6">
                   <div className=" w-full flex items-center justify-center gap-10">
                      {headerData.map((item: any, index: number) => (
                         <div key={index}>
@@ -48,9 +51,9 @@ const Header = () => {
                      ))}
                   </div>
                </div>
-               <div className="flex items-center justify-center gap-10 col-span-3">
+               <div className="flex items-center justify-end xl:justify-center gap-10 col-span-9 xl:col-span-3">
                   {/* Search Block */}
-                  <div className=" bg-base-200 pl-4 pr-3 py-2 rounded-md flex items-center gap-4">
+                  <div className="bg-base-200 pl-4 pr-3 py-2 rounded-md hidden sm:flex items-center gap-4">
                      <input
                         type="text"
                         className=" outline-none text-neutral bg-base-200 w-28"
@@ -58,7 +61,7 @@ const Header = () => {
                      />
                      <div>
                         <svg
-                        className='cursor-pointer'
+                           className="cursor-pointer"
                            width="16"
                            height="16"
                            viewBox="0 0 16 16"
@@ -96,8 +99,30 @@ const Header = () => {
                      }}
                      defaultChecked={theme === 'dark'}
                   />
+                  <svg
+                     onClick={() => setSidebarOpen(!sidebarOpen)}
+                     className="cursor-pointer xl:hidden"
+                     width="20"
+                     height="20"
+                     viewBox="0 0 20 20"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        d="M3.33301 5H16.6663M3.33301 10H16.6663M3.33301 15H16.6663"
+                        stroke="#4B5563"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                     />
+                  </svg>
                </div>
             </div>
+            {/* Responsive Sidebar Layout */}
+            <SidebarLayout
+               sidebarOpen={sidebarOpen}
+               setSidebarOpen={setSidebarOpen}
+            />
          </div>
       </div>
    )
