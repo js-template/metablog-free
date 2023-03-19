@@ -6,61 +6,65 @@ import NewsLetter from '@/components/newsletter/NewsLetter'
 const Footer = () => {
    return (
       <div>
-         <div className="bg-base-200 px-5 md:px-0">
+         <div className="bg-secondary-content px-5 md:px-0">
             <div className="container mx-auto">
                <footer className=" grid grid-cols-12 gap-5 py-16">
                   <div className="col-span-12 lg:col-span-3">
                      <span className="text-lg font-semibold text-neutral font-sans">
                         About
                      </span>
-                     <p className=" mt-3 text-base text-secondary">
+                     <p className="mt-3 text-base text-secondary">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam
                      </p>
                      <h6 className="mt-6">
-                        <span className=" font-semibold text-neutral">
+                        <span className="font-semibold text-neutral">
                            Email :
                         </span>
-                        <span className="text-secondary">
+                        <span className="text-base-content">
                            info@jstemplate.net
                         </span>
                      </h6>
                      <h6 className="mt-1">
-                        <span className=" font-semibold text-neutral">
+                        <span className="font-semibold text-neutral">
                            Phone :
                         </span>
-                        <span className="text-secondary">880 123 456 789</span>
+                        <span className="text-base-content">
+                           880 123 456 789
+                        </span>
                      </h6>
                   </div>
                   <div className="flex justify-between lg:justify-center lg:gap-20 col-span-12 lg:col-span-5">
                      <div>
-                        <span className=" text-neutral text-lg font-semibold">
+                        <span className="text-neutral text-lg font-semibold">
                            Quick Link
                         </span>
-                        <div className=" flex flex-col gap-y-2 mt-6">
+                        <div className="flex flex-col gap-y-2 mt-6">
                            {FooterDataOne.map((item: any, index: number) => (
                               <div key={index}>
-                                 <Link href={item.link}>
-                                    <p className="link link-hover text-base text-secondary-focus hover:text-primary transition hover:duration-300">
-                                       {item.name}
-                                    </p>
+                                 <Link
+                                    href={item.link}
+                                    className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300"
+                                 >
+                                    {item.name}
                                  </Link>
                               </div>
                            ))}
                         </div>
                      </div>
                      <div>
-                        <span className=" text-neutral text-lg font-semibold">
+                        <span className="text-neutral text-lg font-semibold">
                            Category
                         </span>
-                        <div className=" flex flex-col gap-y-2 mt-6">
+                        <div className="flex flex-col gap-y-2 mt-6">
                            {FooterDataTwo.map((item: any, index: number) => (
                               <div key={index}>
-                                 <Link href={item.link}>
-                                    <p className="link link-hover text-base text-secondary-focus hover:text-primary transition hover:duration-300">
-                                       {item.name}
-                                    </p>
+                                 <Link
+                                    href={item.link}
+                                    className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300"
+                                 >
+                                    {item.name}
                                  </Link>
                               </div>
                            ))}
@@ -71,8 +75,7 @@ const Footer = () => {
                      <NewsLetter />
                   </div>
                </footer>
-               <div className=" border border-base-300"></div>
-               <div className=" flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-8 bg-base-200">
+               <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-8 bg-secondary-content border-t border-base-200">
                   <div className="flex items-center gap-2.5">
                      <div>
                         <svg
@@ -101,29 +104,32 @@ const Footer = () => {
                         </svg>
                      </div>
                      <div>
-                        <h5 className=" text-xl text-neutral-focus">
-                           Meta<span className=" font-bold">Blog</span>
+                        <h5 className="text-xl text-neutral-focus">
+                           Meta<strong>Blog</strong>
                         </h5>
-                        <p className=" mt-0.5 text-neutral-focus text-base">
+                        <p className="mt-0.5 text-base-content text-base">
                            © JS Template 2023. All Rights Reserved.
                         </p>
                      </div>
                   </div>
-                  <div className=" flex items-center gap-4">
-                     <Link href="/">
-                        <h6 className="text-base border-r border-base-300 pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
-                           Terms of Use
-                        </h6>
+                  <div className="flex items-center gap-4 text-base-content">
+                     <Link
+                        href="/"
+                        className="text-base border-r border-base-200 pr-4 hover:text-primary transition hover:duration-300"
+                     >
+                        Terms of Use
                      </Link>
-                     <Link href="/">
-                        <h6 className="text-base border-r border-base-300 pr-4 text-neutral-focus hover:text-primary transition hover:duration-300">
-                           Privacy Policy
-                        </h6>
+                     <Link
+                        href="/"
+                        className="text-base border-r border-base-200 pr-4  hover:text-primary transition hover:duration-300"
+                     >
+                        Privacy Policy
                      </Link>
-                     <Link href="/">
-                        <h6 className="text-base text-neutral-focus hover:text-primary transition hover:duration-300">
-                           Cookie Policy
-                        </h6>
+                     <Link
+                        href="/"
+                        className="text-base hover:text-primary transition hover:duration-300"
+                     >
+                        Cookie Policy
                      </Link>
                   </div>
                </div>
