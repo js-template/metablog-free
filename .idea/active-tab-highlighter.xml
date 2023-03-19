@@ -4,9 +4,9 @@
     <option name="background">
       <PersistentColor>
         <option name="enabled" value="true" />
-        <option name="red" value="173" />
-        <option name="green" value="46" />
-        <option name="blue" value="156" />
+        <option name="red" value="31" />
+        <option name="green" value="31" />
+        <option name="blue" value="31" />
       </PersistentColor>
     </option>
   </component>
