@@ -4,8 +4,13 @@ const BannerCard = () => {
    return (
       <section>
          <div className="relative rounded-xl">
-            <img width="1216" height="600" src="/image1.png" />
-            <div className="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-md">
+            <img
+               width="1216"
+               height="600"
+               alt={`banner_image`}
+               src="/image1.png"
+            />
+            <div className="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-[0_12px_24px_-6px] shadow-base-content/20">
                <button className=" text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md">
                   Technology
                </button>
@@ -19,7 +24,7 @@ const BannerCard = () => {
                   <div className=" flex items-center gap-3">
                      <div className="avatar">
                         <div className="w-9 rounded-full">
-                           <img src="/image1.png" />
+                           <img src="/image1.png" alt={`avatar_image`} />
                         </div>
                      </div>
                      <a href="/">
