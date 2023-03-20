@@ -4,7 +4,7 @@ import React from 'react'
 
 const PostCard = () => {
    return (
-      <div className="card w-fit p-4 border border-base-content/10 rounded-xl">
+      <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
          <figure>
             <Image
                src="/blog1.png"
@@ -34,12 +34,14 @@ const PostCard = () => {
                         <img src="/image1.png" alt={`avatar_image`} />
                      </div>
                   </div>
-                  <Link
-                     href="/"
-                     className="text-base font-medium hover:text-primary transition hover:duration-300"
-                  >
-                     Jason Francisco
-                  </Link>
+                  <h5>
+                     <Link
+                        href="/"
+                        className="text-base font-medium hover:text-primary transition hover:duration-300"
+                     >
+                        Jason Francisco
+                     </Link>
+                  </h5>
                </div>
                <p className="text-base">August 20, 2022</p>
             </div>

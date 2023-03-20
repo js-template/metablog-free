@@ -5,7 +5,7 @@ import React from 'react'
 const BannerCard = () => {
    return (
       <section>
-         <div className="relative rounded-xl">
+         <div className="relative rounded-xl font-work">
             <Image
                width="1216"
                height="600"
@@ -16,13 +16,15 @@ const BannerCard = () => {
                <div className="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-4">
                   Technology
                </div>
-               <Link
-                  href="/"
-                  className="text-base-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 "
-               >
-                  The Impact of Technology on the Workplace: How Technology is
-                  Changing
-               </Link>
+               <h3>
+                  <Link
+                     href="/"
+                     className="text-base-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition-all hover:duration-500"
+                  >
+                     The Impact of Technology on the Workplace: How Technology
+                     is Changing
+                  </Link>
+               </h3>
                <div className="mt-6 flex items-center gap-5">
                   <div className=" flex items-center gap-3">
                      <div className="avatar">
@@ -30,12 +32,14 @@ const BannerCard = () => {
                            <img src="/image1.png" alt={`avatar_image`} />
                         </div>
                      </div>
-                     <Link
-                        href="/"
-                        className="text-base-content/60 text-xs md:text-base font-medium hover:text-primary transition hover:duration-300"
-                     >
-                        Jason Francisco
-                     </Link>
+                     <h6>
+                        <Link
+                           href="/"
+                           className="text-base-content/60 text-xs md:text-base font-medium hover:text-primary transition hover:duration-300"
+                        >
+                           Jason Francisco
+                        </Link>
+                     </h6>
                   </div>
                   <p className="text-base-content/60 text-xs md:text-base">
                      August 20, 2022

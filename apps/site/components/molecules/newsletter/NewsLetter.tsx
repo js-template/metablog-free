@@ -5,12 +5,12 @@ const NewsLetter = () => {
    return (
       <div className="w-full">
          <div className="bg-base-100 py-8 px-9 rounded-xl">
-            <h4 className="text-center text-xl font-semibold text-base-content">
+            <p className="text-center text-xl font-semibold text-base-content">
                Weekly Newsletter
-            </h4>
-            <h6 className="mt-2 text-base text-center text-base-content/60">
+            </p>
+            <p className="mt-2 text-base text-center text-base-content/60">
                Get blog articles and offers via email
-            </h6>
+            </p>
             <div className="relative">
                <input
                   placeholder="Your Email"

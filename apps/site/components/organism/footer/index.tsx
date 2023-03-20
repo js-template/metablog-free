@@ -1,7 +1,7 @@
 import { FooterDataOne, FooterDataTwo } from '@/data/footerData'
 import Link from 'next/link'
 import React from 'react'
-import NewsLetter from '@/components/newsletter/NewsLetter'
+import NewsLetter from '@/components/molecules/newsletter/NewsLetter'
 import useMode from '@/utils/themeMode'
 import Image from 'next/image'
 
@@ -10,40 +10,46 @@ const Footer = () => {
 
    return (
       <div>
-         <div className="bg-base-200 px-5 md:px-0">
+         <div className="bg-base-200 px-5 md:px-0 font-sans">
             <div className="container mx-auto">
                <footer className="grid grid-cols-12 gap-5 py-16">
                   <div className="col-span-12 lg:col-span-3">
-                     <span className="text-lg font-semibold text-base-content font-sans">
+                     <h5 className="text-lg font-semibold text-base-content font-sans">
                         About
-                     </span>
-                     <p className="mt-3 text-base text-base-content/70">
+                     </h5>
+                     <p className="mt-3 text-base text-base-content/70 mb-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam
                      </p>
-                     <h6 className="mt-6">
-                        <span className="font-semibold text-base-content">
+                     <div>
+                        <a
+                           href="mailto:info@jstemplate.net"
+                           className="font-semibold text-base-content"
+                        >
                            Email :
-                        </span>
-                        <span className="text-base-content/70">
-                           info@jstemplate.net
-                        </span>
-                     </h6>
-                     <h6 className="mt-1">
-                        <span className="font-semibold text-base-content">
+                           <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
+                              info@jstemplate.net
+                           </span>
+                        </a>
+                     </div>
+                     <div className="mt-1">
+                        <a
+                           href="tel:880123456789"
+                           className="font-semibold text-base-content"
+                        >
                            Phone :
-                        </span>
-                        <span className="text-base-content/70">
-                           880 123 456 789
-                        </span>
-                     </h6>
+                           <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
+                              880 123 456 789
+                           </span>
+                        </a>
+                     </div>
                   </div>
                   <div className="flex justify-between lg:justify-center lg:gap-20 col-span-12 lg:col-span-5">
                      <div>
-                        <span className="text-base-content text-lg font-semibold">
+                        <h5 className="text-base-content text-lg font-semibold font-sans">
                            Quick Link
-                        </span>
+                        </h5>
                         <div className="flex flex-col gap-y-2 mt-6">
                            {FooterDataOne.map((item: any, index: number) => (
                               <div key={index}>
@@ -58,9 +64,9 @@ const Footer = () => {
                         </div>
                      </div>
                      <div>
-                        <span className="text-base-content text-lg font-semibold">
+                        <h5 className="text-base-content text-lg font-semibold font-sans">
                            Category
-                        </span>
+                        </h5>
                         <div className="flex flex-col gap-y-2 mt-6">
                            {FooterDataTwo.map((item: any, index: number) => (
                               <div key={index}>
@@ -103,9 +109,9 @@ const Footer = () => {
                         </Link>
                      )}
                      <div>
-                        <h5 className="text-xl text-base-content">
+                        <h4 className="text-xl text-base-content font-sans">
                            Meta<strong>Blog</strong>
-                        </h5>
+                        </h4>
                         <p className="mt-0.5 text-base-content/70 text-base">
                            © JS Template 2023. All Rights Reserved.
                         </p>

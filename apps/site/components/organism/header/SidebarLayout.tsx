@@ -71,7 +71,7 @@ const SidebarLayout = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
                      <Link
                         href={item.link}
                         key={index}
-                        className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300"
+                        className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300 font-work"
                      >
                         {item.name}
                      </Link>
