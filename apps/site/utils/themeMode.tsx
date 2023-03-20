@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 const useMode = () => {
    const { themes, theme, setTheme } = useTheme()
    const [lightMode, setLightMode] = useState(true)
+   const [hydrationError, setHydrationError] = useState(false)
 
    useEffect(() => {
       if (theme === 'light') {
@@ -13,6 +14,11 @@ const useMode = () => {
       }
    }, [theme])
 
-   return { lightMode, themes, theme, setTheme }
+   // fix hydration error on next-themes
+   useEffect(() => {
+      setHydrationError(true)
+   }, [])
+
+   return { lightMode, themes, theme, setTheme, hydrationError }
 }
 export default useMode

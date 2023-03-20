@@ -7,7 +7,7 @@ import useMode from '@/utils/themeMode'
 import SidebarLayout from '../SidebarLayout/SidebarLayout'
 
 const Header = () => {
-   const { lightMode, theme, setTheme, themes } = useMode()
+   const { lightMode, theme, setTheme, themes, hydrationError } = useMode()
 
    const [sidebarOpen, setSidebarOpen] = React.useState<boolean>(false)
 
@@ -137,7 +137,7 @@ const Header = () => {
                                  }}
                               >
                                  <span className="text-base-content flex items-center gap-2">
-                                    {lightMode && theme === item && (
+                                    {hydrationError && theme === item && (
                                        <svg
                                           xmlns="http://www.w3.org/2000/svg"
                                           width="16"
