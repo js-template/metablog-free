@@ -1,5 +1,4 @@
 import Advertisement from '@/components/advertisement/Advertisement'
-import AuthorInfo from '@/components/authorInfo/AuthorInfo'
 import BannerCard from '@/components/card/BannerCard'
 import PostCard from '@/components/card/PostCard'
 import { Fragment } from 'react'
@@ -14,7 +13,6 @@ export default function Home() {
    return (
       <Fragment>
          {/* Page Body */}
-         <AuthorInfo/>
          <main className="container mx-auto">
             <div>
                <BannerCard />
