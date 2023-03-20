@@ -9,7 +9,7 @@ export const headerData = [
    },
    {
       name: 'Single Post',
-      link: '/',
+      link: '/single-post',
    },
    {
       name: 'Author',
