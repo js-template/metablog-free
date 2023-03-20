@@ -23,7 +23,7 @@ const BannerCard = () => {
                   The Impact of Technology on the Workplace: How Technology is
                   Changing
                </Link>
-               <div className=" mt-6 flex items-center gap-5">
+               <div className="mt-6 flex items-center gap-5">
                   <div className=" flex items-center gap-3">
                      <div className="avatar">
                         <div className="w-9 rounded-full">

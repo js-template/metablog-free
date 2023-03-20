@@ -1,5 +1,7 @@
 import Advertisement from '@/components/advertisement/Advertisement'
+import BannerCardTwo from '@/components/card/BannerCardTwo'
 import PostCard from '@/components/card/PostCard'
+import PageInfo from '@/components/organism/pageInfo/PageInfo'
 import React, { Fragment } from 'react'
 
 const BlogListing = () => {
@@ -7,6 +9,10 @@ const BlogListing = () => {
       <Fragment>
          {/* Page Body */}
          <main className="container mx-auto">
+            <PageInfo />
+            <div className="my-12">
+               <BannerCardTwo />
+            </div>
             <div className="my-20">
                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: any) => (
