@@ -21,7 +21,7 @@ export default function Home() {
                <Advertisement />
             </div>
             <div className="my-20">
-               <h5 className="text-secondary font-bold text-2xl mb-8">
+               <h5 className="text-base-content font-bold text-2xl mb-8">
                   Latest Post
                </h5>
                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -32,7 +32,7 @@ export default function Home() {
                <div className="flex items-center justify-center w-full mt-8">
                   <Link
                      href={`/blog`}
-                     className="btn btn-outline btn-secondary"
+                     className="btn btn-outline btn-secondary text-secondary-content/60"
                   >
                      View All Post
                   </Link>

@@ -42,10 +42,8 @@ const Header = () => {
                   <div className=" w-full flex items-center justify-center gap-10">
                      {headerData.map((item: any, index: number) => (
                         <div key={index}>
-                           <Link href={item.link}>
-                              <p className="link link-hover text-base text-base-content hover:text-primary transition hover:duration-300">
+                           <Link href={item.link} className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300">
                                  {item.name}
-                              </p>
                            </Link>
                         </div>
                      ))}
