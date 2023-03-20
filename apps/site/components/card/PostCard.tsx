@@ -15,12 +15,12 @@ const PostCard = () => {
             />
          </figure>
          <div className="card-body py-6 px-2 font-medium text-sm">
-            <h6 className="text-primary pl-2.5 font-medium text-sm">
+            <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize">
                Technology
-            </h6>
+            </span>
             <Link
                href="/"
-               className=" text-neutral font-semibold text-lg md:text-xl lg:text-2xl mt-4"
+               className=" text-neutral font-semibold text-lg md:text-xl lg:text-2xl mt-2"
             >
                The Impact of Technology on the Workplace: How Technology is
                Changing
@@ -39,9 +39,7 @@ const PostCard = () => {
                      Jason Francisco
                   </Link>
                </div>
-               <p className="text-secondary-focus text-base">
-                  August 20, 2022
-               </p>
+               <p className="text-secondary-focus text-base">August 20, 2022</p>
             </div>
          </div>
       </div>

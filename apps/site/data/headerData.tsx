@@ -1,22 +1,22 @@
-export const headerData=[
-    {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "Blog",
-        link: "/",
-      },
-      {
-        name: "Single Post",
-        link: "/",
-      },
-      {
-          name: "Pages",
-          link: "/",
-      },
-      {
-        name: "Contact",
-        link: "/",
-      },
+export const headerData = [
+   {
+      name: 'Home',
+      link: '/',
+   },
+   {
+      name: 'Blog',
+      link: '/blog',
+   },
+   {
+      name: 'Single Post',
+      link: '/',
+   },
+   {
+      name: 'Author',
+      link: '/author',
+   },
+   {
+      name: 'Contact',
+      link: '/',
+   },
 ]

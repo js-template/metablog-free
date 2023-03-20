@@ -3,9 +3,9 @@ import './globals.css'
 import React from 'react'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { GlobalProvider } from '@/context/store'
-import { Providers } from './providers'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import { Providers } from '@/utils/themeMode'
 
 const Jakarta_Sans = Plus_Jakarta_Sans({
    weight: ['400', '500', '600', '700'],
@@ -28,12 +28,13 @@ export default function RootLayout({
       >
          <body>
             <Providers>
-               <Header />
-               <GlobalProvider>{children}</GlobalProvider>
-               <Footer />
+               <GlobalProvider>
+                  <Header />
+                  {children}
+                  <Footer />
+               </GlobalProvider>
             </Providers>
          </body>
       </html>
    )
 }
-
