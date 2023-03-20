@@ -17,7 +17,7 @@ const AuthorInfo = () => {
                </div>
             </div>
             <div>
-               <h4 className="text-neutral text-base sm:text-xl font-medium">
+               <h4 className="text-base-content text-base sm:text-xl font-medium">
                   Jonathan Doe
                </h4>
                <span className="text-secondary text-xs sm:text-sm">
