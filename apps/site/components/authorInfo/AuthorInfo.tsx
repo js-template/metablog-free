@@ -18,15 +18,15 @@ const AuthorInfo = () => {
                   </div>
                </div>
                <div>
-                  <h4 className="text-neutral text-xl font-medium">
+                  <h4 className="text-neutral text-base sm:text-xl font-medium">
                      Jonathan Doe
                   </h4>
-                  <span className="text-secondary text-sm ">
+                  <span className="text-secondary text-xs sm:text-sm">
                      Collaborator & Editor
                   </span>
                </div>
             </div>
-            <p className="text-lg text-secondary-focus text-center py-6 max-w-2xl w-full mx-auto">
+            <p className="text-sm sm:text-lg text-secondary-focus text-center py-6 max-w-2xl w-full mx-auto">
                Meet Jonathan Doe, a passionate writer and blogger with a love
                for technology and travel. Jonathan holds a degree in Computer
                Science and has spent years working in the tech industry, gaining
@@ -49,7 +49,7 @@ const AuthorInfo = () => {
    )
 }
 
-export default AuthorInfo;
+export default AuthorInfo
 
 // social share icons
 const socialShare = [
@@ -57,24 +57,24 @@ const socialShare = [
       id: 1,
       icon: '/icon/facebook.png',
       alt: 'facebook_icon',
-      link: '/'
+      link: '/',
    },
    {
       id: 2,
       icon: '/icon/twitter.png',
       alt: 'twitter_icon',
-      link: '/'
+      link: '/',
    },
    {
       id: 3,
       icon: '/icon/instagram.png',
       alt: 'instagram_icon',
-      link: '/'
+      link: '/',
    },
    {
       id: 4,
       icon: '/icon/linkedin.png',
       alt: 'linkedin_icon',
-      link: '/'
+      link: '/',
    },
 ]
