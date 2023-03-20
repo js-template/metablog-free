@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { headerData } from '@/data/headerData'
 import useMode from '@/utils/themeMode'
-import SidebarLayout from '../SidebarLayout/SidebarLayout'
+import SidebarLayout from './SidebarLayout'
 
 const Header = () => {
    const { lightMode, theme, setTheme, themes, hydrationError } = useMode()
