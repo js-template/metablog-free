@@ -9,7 +9,7 @@ const Author = () => {
          <AuthorInfo />
          {/* Page Body */}
          <main className="container mx-auto mt-12 mb-24 px-5 sm:px-0">
-            <h5 className="text-secondary font-bold text-2xl mb-8">
+            <h5 className="text-base-content font-bold text-2xl mb-8">
                Latest Post
             </h5>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

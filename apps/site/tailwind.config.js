@@ -1,5 +1,3 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
    mode: 'jit',
@@ -13,7 +11,9 @@ module.exports = {
       },
       extend: {
          fontFamily: {
-            sans: ['var(--font-plus-jakarta-sans)', ...fontFamily.sans],
+            sans: ['var(--font-plus-jakarta-sans)'], // this font-family is used for the footer
+            work: ['var(--font-work-sans)'], // this font-family is used for the headings
+            serif: ['var(--font-source-serif-pro)'], // this font-family is used for the body like ( p, li, etc. )
          },
       },
    },

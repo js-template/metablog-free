@@ -18,13 +18,15 @@ const PostCard = () => {
             <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize">
                Technology
             </span>
-            <Link
-               href="/"
-               className="text-base-content font-semibold text-lg md:text-xl lg:text-2xl mt-2"
-            >
-               The Impact of Technology on the Workplace: How Technology is
-               Changing
-            </Link>
+            <h3>
+               <Link
+                  href="/"
+                  className="text-base-content hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2"
+               >
+                  The Impact of Technology on the Workplace: How Technology is
+                  Changing
+               </Link>
+            </h3>
             <div className="mt-5 flex items-center gap-5 text-base-content/60 ">
                <div className=" flex items-center gap-3">
                   <div className="avatar">
