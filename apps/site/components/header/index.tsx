@@ -42,14 +42,17 @@ const Header = () => {
                   <div className=" w-full flex items-center justify-center gap-10">
                      {headerData.map((item: any, index: number) => (
                         <div key={index}>
-                           <Link href={item.link} className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300">
-                                 {item.name}
+                           <Link
+                              href={item.link}
+                              className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300"
+                           >
+                              {item.name}
                            </Link>
                         </div>
                      ))}
                   </div>
                </div>
-               <div className="flex items-center justify-end xl:justify-center gap-10 col-span-9 xl:col-span-3">
+               <div className="flex items-center justify-end xl:justify-center gap-5 md:gap-10 col-span-9 xl:col-span-3">
                   {/* Search Block */}
                   <div className="bg-base-200 pl-4 pr-3 py-2 rounded-md hidden sm:flex items-center gap-4">
                      <input
@@ -160,10 +163,10 @@ const Header = () => {
                         </ul>
                      </div>
                   </div>
-                  {/* Responsive Sidebar Menu */}
+                  {/* Responsive Sidebar Menu icon */}
                   <svg
                      onClick={() => setSidebarOpen(!sidebarOpen)}
-                     className="cursor-pointer w-8 h-8 xl:hidden text-neutral"
+                     className="cursor-pointer w-8 h-8 xl:hidden text-info"
                      width="20"
                      height="20"
                      viewBox="0 0 20 20"
