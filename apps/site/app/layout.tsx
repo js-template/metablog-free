@@ -5,7 +5,7 @@ import {Plus_Jakarta_Sans, Source_Serif_Pro, Work_Sans,} from 'next/font/google'
 import {GlobalProvider} from '@/context/store'
 import Header from '@/components/organism/header'
 import Footer from '@/components/organism/footer'
-import {Providers} from '@/utils/themeMode'
+import {Providers} from '@/utils/themeMode' // Plus Jakarta Sans font family with 4 weights and 2 styles
 
 // Plus Jakarta Sans font family with 4 weights and 2 styles
 const Jakarta_Sans = Plus_Jakarta_Sans({

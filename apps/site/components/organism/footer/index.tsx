@@ -27,7 +27,7 @@ const Footer = () => {
                            href="mailto:info@jstemplate.net"
                            className="font-semibold text-base-content"
                         >
-                           Email :
+                           Email :{' '}
                            <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
                               info@jstemplate.net
                            </span>
@@ -38,7 +38,7 @@ const Footer = () => {
                            href="tel:880123456789"
                            className="font-semibold text-base-content"
                         >
-                           Phone :
+                           Phone :{' '}
                            <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
                               880 123 456 789
                            </span>
@@ -85,7 +85,7 @@ const Footer = () => {
                      <NewsLetter />
                   </div>
                </footer>
-               <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-8 bg-base-200 border-t border-base-300">
+               <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-8 bg-base-200 border-t border-base-content/10">
                   <div className="flex items-center gap-2.5">
                      {lightMode ? (
                         <Link href="/">
