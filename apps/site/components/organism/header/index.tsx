@@ -13,7 +13,7 @@ const Header = () => {
 
    return (
       <div className="py-5">
-         <div className="container mx-auto">
+         <div className="container mx-auto font-work">
             <div className="navbar grid grid-cols-12">
                <div className="col-span-3">
                   {lightMode ? (
@@ -57,7 +57,7 @@ const Header = () => {
                   <div className="bg-base-200 pl-4 pr-3 py-2 rounded-md hidden sm:flex items-center gap-4">
                      <input
                         type="text"
-                        className="outline-none text-neutral bg-base-200 w-28"
+                        className="outline-none text-neutral bg-base-200 w-28 placeholder:font-work"
                         placeholder="Search"
                      />
                      <div>

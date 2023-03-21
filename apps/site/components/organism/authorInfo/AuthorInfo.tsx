@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const AuthorInfo = () => {
    return (
-      <div className="container mx-auto py-12 sm:mt-8 bg-base-200 px-5 sm:px-0 rounded-xl">
+      <div className="container mx-auto py-12 sm:mt-8 bg-base-200 px-5 sm:px-0 rounded-xl font-work">
          <div className="flex items-center justify-center gap-4">
             <div className="avatar">
                <div className="w-16 rounded-full">
@@ -20,9 +20,9 @@ const AuthorInfo = () => {
                </div>
             </div>
             <div>
-               <h4 className="text-base-content text-base sm:text-xl font-medium">
+               <h5 className="text-base-content text-base sm:text-xl font-medium">
                   Jonathan Doe
-               </h4>
+               </h5>
                <span className="text-base-content/60 text-xs sm:text-sm">
                   Collaborator & Editor
                </span>
