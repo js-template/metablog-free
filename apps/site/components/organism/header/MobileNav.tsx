@@ -7,7 +7,7 @@ interface SidebarLayoutProps {
    setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const SidebarLayout = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
+const MobileNav = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
    return (
       <nav>
          <div className="block xl:hidden">
@@ -90,4 +90,4 @@ const SidebarLayout = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
    )
 }
 
-export default SidebarLayout
+export default MobileNav

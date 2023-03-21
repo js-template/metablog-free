@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,12 +5,12 @@ const PostCard = () => {
    return (
       <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
          <figure>
-            <Image
-               src="/blog1.png"
+            <img
+               src="https://placehold.it/360x240"
                alt="email"
+               className={`rounded-xl`}
                width={360}
                height={240}
-               priority={true}
             />
          </figure>
          <div className="card-body py-6 px-2 font-medium">
@@ -31,7 +30,7 @@ const PostCard = () => {
                <div className=" flex items-center gap-3">
                   <div className="avatar">
                      <div className="w-9 rounded-full">
-                        <img src="/image1.png" alt={`avatar_image`} />
+                        <img src="https://placehold.it/100x100" alt="avatar" />
                      </div>
                   </div>
                   <h5>
