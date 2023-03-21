@@ -19,8 +19,8 @@ const PostCard = () => {
             </span>
             <h3>
                <Link
-                  href="/"
-                  className="text-base-content hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 leading-7"
+                  href="/single-post"
+                  className="text-base-content hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2"
                >
                   The Impact of Technology on the Workplace: How Technology is
                   Changing
