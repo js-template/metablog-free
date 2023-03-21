@@ -1,5 +1,14 @@
 import React from 'react'
 
+
+/**
+ * Our NewsLetter is a reusable UI component that used to take user email.
+ *
+ * @property heading, an input field and a button.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
+
 const NewsLetter = () => {
    return (
       <div className="w-full">

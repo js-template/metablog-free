@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 
+/**
+ * Our PostCard is a reusable UI component used to display a post as a card format.
+ *
+ * @property featured image, category name, a heading, author image, author name, and publication date.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
+
 const PostCard = () => {
    return (
       <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work">

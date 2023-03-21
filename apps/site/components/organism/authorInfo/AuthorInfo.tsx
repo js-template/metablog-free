@@ -1,6 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 
+/**
+ * Our AuthorInfo is a reusable UI component that can be used to represent user details information.
+ *
+ * @property author image, author name and position, author's short information and authors's social identity.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
+
 const AuthorInfo = () => {
    return (
       <div className="container mx-auto py-12 sm:mt-8 bg-base-200 px-5 sm:px-0 rounded-xl font-work">
