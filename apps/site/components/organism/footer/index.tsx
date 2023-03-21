@@ -24,7 +24,7 @@ const Footer = () => {
                   <div>
                      <a
                         href="mailto:info@jstemplate.net"
-                        className="font-semibold text-base-content"
+                        className="font-semibold text-base-content text-base"
                      >
                         Email :{' '}
                         <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
@@ -35,7 +35,7 @@ const Footer = () => {
                   <div className="mt-1">
                      <a
                         href="tel:880123456789"
-                        className="font-semibold text-base-content"
+                        className="font-semibold text-base-content text-base"
                      >
                         Phone :{' '}
                         <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">

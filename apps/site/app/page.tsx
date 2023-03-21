@@ -23,7 +23,7 @@ export default function Home() {
 
          {/* Latest Post */}
          <section className="my-20">
-            <h3 className="text-base-content font-bold text-2xl mb-8 font-work">
+            <h3 className="text-base-content font-bold text-2xl mb-8 font-work leading-8">
                Latest Post
             </h3>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex items-center justify-center w-full mt-8">
                <Link
                   href={`/blog`}
-                  className="btn btn-outline btn-secondary text-secondary-content/60 font-work"
+                  className="btn btn-outline btn-secondary text-secondary-content/60 font-work font-medium text-base"
                >
                   View All Post
                </Link>

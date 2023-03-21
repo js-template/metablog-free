@@ -10,7 +10,7 @@ const SinglePost = () => {
          <section>
             <div className="container mx-auto px-5 md:px-0 w-full md:w-10/12 lg:w-5/12 font-work">
                <div className="py-5">
-                  <div className="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4">
+                  <div className="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4 font-medium">
                      Technology
                   </div>
                   <h3 className="text-base-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 ">
@@ -29,12 +29,12 @@ const SinglePost = () => {
                         </div>
                         <a
                            href="/"
-                           className=" text-xs md:text-base font-medium hover:text-primary transition hover:duration-300"
+                           className=" text-xs md:text-sm font-medium hover:text-primary transition hover:duration-300"
                         >
                            Jason Francisco
                         </a>
                      </div>
-                     <p className=" text-xs md:text-base">August 20, 2022</p>
+                     <p className="text-xs md:text-sm">August 20, 2022</p>
                   </div>
                </div>
                <div className="mt-8">
@@ -50,7 +50,7 @@ const SinglePost = () => {
                {/* article section start  */}
                <div className="font-serif">
                   <div className="mt-8">
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Traveling is an enriching experience that opens up new
                         horizons, exposes us to different cultures, and creates
                         memories that last a lifetime. However, traveling can
@@ -65,10 +65,10 @@ const SinglePost = () => {
                         phrases in the local language can also go a long way in
                         making connections and showing respect.
                      </p>
-                     <h5 className="text-2xl text-base-content font-semibold mt-8 mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mt-8 mb-4">
                         Research Your Destination
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Traveling is an enriching experience that opens up new
                         horizons, exposes us to different cultures, and creates
                         memories that last a lifetime. However, traveling can
@@ -83,10 +83,10 @@ const SinglePost = () => {
                         phrases in the local language can also go a long way in
                         making connections and showing respect.
                      </p>
-                     <h5 className="text-2xl text-base-content font-semibold mt-8 mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mt-8 mb-4">
                         Plan Your Itinerary
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Traveling is an enriching experience that opens up new
                         horizons, exposes us to different cultures, and creates
                         memories that last a lifetime. However, traveling can
@@ -121,17 +121,17 @@ const SinglePost = () => {
                   <div className="flex items-center justify-center my-8 font-work">
                      <div className="py-4 bg-base-content/10 text-base-content/60 text-center rounded-xl w-11/12">
                         <p className="text-sm">Advertisement</p>
-                        <h6 className=" text-xl font-semibold">
+                        <h6 className="text-xl font-semibold leading-[24px]">
                            You can place ads
                         </h6>
-                        <p className="text-lg">750x100</p>
+                        <p className="text-lg leading-[26px]">750x100</p>
                      </div>
                   </div>
                   <div className="mb-20">
-                     <h5 className="text-2xl text-base-content font-semibold mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mb-4">
                         Pack Lightly and Smartly
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Packing can be a daunting task, but with some careful
                         planning and smart choices, you can pack light and
                         efficiently. Start by making a packing list and sticking
@@ -140,10 +140,10 @@ const SinglePost = () => {
                         and packing organizers to maximize space and minimize
                         wrinkles.
                      </p>
-                     <h5 className="text-2xl text-base-content font-semibold mt-8 mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mt-8 mb-4">
                         Stay Safe and Healthy
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Packing can be a daunting task, but with some careful
                         planning and smart choices, you can pack light and
                         efficiently. Start by making a packing list and sticking
@@ -152,10 +152,10 @@ const SinglePost = () => {
                         and packing organizers to maximize space and minimize
                         wrinkles.
                      </p>
-                     <h5 className="text-2xl text-base-content font-semibold mt-8 mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mt-8 mb-4">
                         Immerse Yourself in the Local Culture
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         One of the most rewarding aspects of traveling is
                         immersing yourself in the local culture and customs.
                         This includes trying local cuisine, attending cultural
@@ -163,10 +163,10 @@ const SinglePost = () => {
                         Learning a few phrases in the local language can also go
                         a long way in making connections and showing respect.
                      </p>
-                     <h5 className="text-2xl text-base-content font-semibold mt-8 mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mt-8 mb-4">
                         Capture Memories
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Finally, dont forget to capture memories of your
                         journey. Whether is through photographs, journaling, or
                         souvenirs, preserving the moments and experiences of
@@ -175,10 +175,10 @@ const SinglePost = () => {
                         moment and not let technology distract you from the
                         beauty of your surroundings.
                      </p>
-                     <h5 className="text-2xl text-base-content font-semibold mt-8 mb-4">
+                     <h5 className="text-2xl leading-7 text-base-content font-semibold mt-8 mb-4">
                         Conclusion:
                      </h5>
-                     <p className="text-xl text-base-content/80">
+                     <p className="text-xl leading-8 text-base-content/80">
                         Traveling is an art form that requires a blend of
                         planning, preparation, and spontaneity. By following
                         these tips and tricks, you can make the most of your

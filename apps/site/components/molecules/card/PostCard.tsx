@@ -13,14 +13,14 @@ const PostCard = () => {
                height={240}
             />
          </figure>
-         <div className="card-body py-6 px-2 font-medium">
-            <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize">
+         <div className="card-body py-6 px-2">
+            <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-medium">
                Technology
             </span>
             <h3>
                <Link
                   href="/"
-                  className="text-base-content hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2"
+                  className="text-base-content hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 leading-7"
                >
                   The Impact of Technology on the Workplace: How Technology is
                   Changing

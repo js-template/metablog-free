@@ -31,7 +31,7 @@ const BlogListing = () => {
                   ))}
                </div>
                <div className="flex items-center justify-center w-full mt-8">
-                  <button className="btn btn-outline btn-secondary font-work px-5">
+                  <button className="btn btn-outline btn-secondary font-work px-5 text-base font-medium">
                      Load More
                   </button>
                </div>
