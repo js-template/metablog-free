@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const AuthorInfo = () => {
@@ -8,14 +7,11 @@ const AuthorInfo = () => {
          <div className="flex items-center justify-center gap-4">
             <div className="avatar">
                <div className="w-16 rounded-full">
-                  <Image
-                     src="/avatar.png"
+                  <img
+                     src="https://placehold.it/100x100"
                      width={64}
                      height={64}
                      alt="avatar_image"
-                     priority={true}
-                     placeholder={'blur'}
-                     blurDataURL={`/avatar.png`}
                   />
                </div>
             </div>

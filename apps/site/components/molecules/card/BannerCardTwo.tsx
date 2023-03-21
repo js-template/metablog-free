@@ -3,16 +3,17 @@ import React from 'react'
 const BannerCardTwo = () => {
    return (
       <div className="card relative font-work">
+         {/* Card Image */}
          <figure>
             <img
                width="1216"
                height="450"
                alt={`banner_image`}
-               src="/image1.png"
+               src="https://placehold.it/1216x450"
                className="rounded-xl"
             />
          </figure>
-         <div className="card-body p-2 md:p-10 absolute bottom-0 w-full md:w-8/12">
+         <div className="card-body p-2 md:p-10 absolute bottom-0 w-full md:w-8/12 z-20">
             <div className="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4">
                Technology
             </div>
@@ -29,7 +30,7 @@ const BannerCardTwo = () => {
                <div className=" flex items-center gap-3">
                   <div className="avatar">
                      <div className="w-9 rounded-full">
-                        <img src="/image1.png" alt={`avatar_image`} />
+                        <img src="https://placehold.it/100x100" alt="avatar" />
                      </div>
                   </div>
                   <h5>
@@ -44,6 +45,9 @@ const BannerCardTwo = () => {
                <p className=" text-xs md:text-base">August 20, 2022</p>
             </div>
          </div>
+
+         {/*  overlay */}
+         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
       </div>
    )
 }

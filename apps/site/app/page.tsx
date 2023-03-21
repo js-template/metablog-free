@@ -1,7 +1,6 @@
 import Advertisement from '@/components/organism/advertisement/Advertisement'
 import BannerCard from '@/components/molecules/card/BannerCard'
 import PostCard from '@/components/molecules/card/PostCard'
-import { Fragment } from 'react'
 import Link from 'next/link'
 
 export const metadata = {
@@ -11,37 +10,41 @@ export const metadata = {
 
 export default function Home() {
    return (
-      <Fragment>
-         {/* Page Body */}
-         <main className="container mx-auto">
-            <div>
-               <BannerCard />
+      <main className="container mx-auto">
+         {/* Banner Component */}
+         <section>
+            <BannerCard />
+         </section>
+
+         {/* Advertisement Component */}
+         <section className="pt-12">
+            <Advertisement />
+         </section>
+
+         {/* Latest Post */}
+         <section className="my-20">
+            <h3 className="text-base-content font-bold text-2xl mb-8 font-work">
+               Latest Post
+            </h3>
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: any) => (
+                  <PostCard key={item} />
+               ))}
             </div>
-            <div className=" mt-36 mb-20">
-               <Advertisement />
+            <div className="flex items-center justify-center w-full mt-8">
+               <Link
+                  href={`/blog`}
+                  className="btn btn-outline btn-secondary text-secondary-content/60 font-work"
+               >
+                  View All Post
+               </Link>
             </div>
-            <div className="my-20">
-               <p className="text-base-content font-bold text-2xl mb-8 font-work">
-                  Latest Post
-               </p>
-               <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: any) => (
-                     <PostCard key={item} />
-                  ))}
-               </div>
-               <div className="flex items-center justify-center w-full mt-8">
-                  <Link
-                     href={`/blog`}
-                     className="btn btn-outline btn-secondary text-secondary-content/60 font-work"
-                  >
-                     View All Post
-                  </Link>
-               </div>
-            </div>
-            <div className="mb-24">
-               <Advertisement />
-            </div>
-         </main>
-      </Fragment>
+         </section>
+
+         {/* Advertisement Component */}
+         <section className="mb-24">
+            <Advertisement />
+         </section>
+      </main>
    )
 }

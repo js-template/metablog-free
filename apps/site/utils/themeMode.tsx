@@ -8,7 +8,39 @@ type Props = {
 
 export function Providers({ children }: Props) {
    return (
-      <ThemeProvider themes={['light', 'dark']} enableSystem={false}>
+      <ThemeProvider
+         themes={[
+            'light',
+            'dark',
+            'bumblebee',
+            'emerald',
+            'corporate',
+            'synthwave',
+            'retro',
+            'cyberpunk',
+            'valentine',
+            'halloween',
+            'garden',
+            'forest',
+            'aqua',
+            'lofi',
+            'pastel',
+            'fantasy',
+            'wireframe',
+            'black',
+            'luxury',
+            'dracula',
+            'cmyk',
+            'autumn',
+            'business',
+            'acid',
+            'lemonade',
+            'night',
+            'coffee',
+            'winter',
+         ]}
+         enableSystem={false}
+      >
          {children}
       </ThemeProvider>
    )
