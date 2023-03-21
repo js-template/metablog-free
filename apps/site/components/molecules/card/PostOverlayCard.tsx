@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BannerCardTwo = () => {
+const PostOverlayCard = () => {
    return (
       <div className="card relative font-work">
          {/* Card Image */}
@@ -52,4 +52,4 @@ const BannerCardTwo = () => {
    )
 }
 
-export default BannerCardTwo
+export default PostOverlayCard

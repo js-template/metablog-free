@@ -1,5 +1,5 @@
 import Advertisement from '@/components/organism/advertisement/Advertisement'
-import BannerCardTwo from '@/components/molecules/card/BannerCardTwo'
+import PostOverlayCard from '@/components/molecules/card/PostOverlayCard'
 import PostCard from '@/components/molecules/card/PostCard'
 import PageInfo from '@/components/organism/pageInfo/PageInfo'
 import React from 'react'
@@ -20,7 +20,7 @@ const BlogListing = () => {
 
             {/* Banner */}
             <section className="my-12">
-               <BannerCardTwo />
+               <PostOverlayCard />
             </section>
 
             {/* All posts component */}
