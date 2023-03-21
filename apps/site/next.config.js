@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
    experimental: {
-      appDir: 'apps/site',
+      appDir: true,
    },
    // image optimization
    images: {
-      domains: ['placehold.it'],
+      domains: ['placehold.it', 'via.placeholder.com'],
    },
 }
 

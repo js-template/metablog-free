@@ -7,18 +7,18 @@ interface SidebarLayoutProps {
    setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const SidebarLayout = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
+const MobileNav = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
    return (
       <nav>
          <div className="block xl:hidden">
             <div
-               className={`overflow-y-auto z-40 flex pt-5 top-0 flex-col h-screen w-full max-w-[300px] fixed bg-secondary-content  duration-500 ease-in  gap-2 md:gap-0 shadow-xl ${
+               className={`overflow-y-auto z-40 flex pt-5 top-0 flex-col h-screen w-full max-w-[300px] fixed bg-base-200  duration-500 ease-in  gap-2 md:gap-0 shadow-xl ${
                   sidebarOpen ? 'left-0' : '-left-full'
                }`}
             >
                <div className="relative flex flex-col gap-5 px-5 pb-6 mt-4 text-lg font-normal leading-6">
                   <div className="flex items-center justify-between mb-6">
-                     <h4 className="text-base text-secondary">Menu</h4>
+                     <h4 className="text-base text-base-content/80">Menu</h4>
                      <svg
                         className="cursor-pointer"
                         onClick={() => setSidebarOpen(!open)}
@@ -71,7 +71,7 @@ const SidebarLayout = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
                      <Link
                         href={item.link}
                         key={index}
-                        className="link link-hover text-base text-secondary hover:text-primary transition hover:duration-300"
+                        className="link link-hover text-base text-base-content/80 hover:text-primary transition hover:duration-300 font-work"
                      >
                         {item.name}
                      </Link>
@@ -90,4 +90,4 @@ const SidebarLayout = ({ sidebarOpen, setSidebarOpen }: SidebarLayoutProps) => {
    )
 }
 
-export default SidebarLayout
+export default MobileNav
