@@ -13,8 +13,8 @@ const PostCard = () => {
                height={240}
             />
          </figure>
-         <div className="card-body py-6 px-2 font-medium">
-            <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize">
+         <div className="card-body py-6 px-2">
+            <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-medium">
                Technology
             </span>
             <h3>

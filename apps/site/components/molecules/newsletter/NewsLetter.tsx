@@ -38,7 +38,7 @@ const NewsLetter = () => {
                   />
                </svg>
             </div>
-            <button className="btn btn-primary py-3 text-center font-medium w-full rounded-md mt-2 text-white">
+            <button className="btn btn-primary py-3 text-center font-medium w-full rounded-md mt-2 text-white text-base">
                Subscribe
             </button>
          </div>

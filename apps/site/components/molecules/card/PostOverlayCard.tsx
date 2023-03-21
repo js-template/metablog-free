@@ -14,7 +14,7 @@ const PostOverlayCard = () => {
             />
          </figure>
          <div className="card-body p-2 md:p-10 absolute bottom-0 w-full md:w-8/12 z-20">
-            <div className="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4">
+            <div className="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4 font-medium">
                Technology
             </div>
             <h3>

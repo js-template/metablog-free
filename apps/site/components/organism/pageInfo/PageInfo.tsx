@@ -12,13 +12,13 @@ const PageInfo = () => {
                <li>
                   <Link
                      href={`/`}
-                     className="hover:text-primary transition hover:duration-300 font-medium"
+                     className="hover:text-primary transition hover:duration-300 font-medium text-base"
                   >
                      Home
                   </Link>
                </li>
                <li>
-                  <span className="text-base-content/60 font-normal">
+                  <span className="text-base-content/60 font-normal text-base">
                      Link One
                   </span>
                </li>
