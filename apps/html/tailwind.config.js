@@ -10,9 +10,9 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-plus-jakarta-sans)'], // this font-family is used for the footer
-				work: ['var(--font-work-sans)'], // this font-family is used for the headings
-				serif: ['var(--font-source-serif-pro)'], // this font-family is used for the body like ( p, li, etc. )
+				sans: ['Plus Jakarta Sans'], // this font-family is used for the footer
+				work: ['Work Sans)'], // this font-family is used for the headings
+				serif: ['Source Serif Pro)'], // this font-family is used for the body like ( p, li, etc. )
 			},
 		},
 	},
