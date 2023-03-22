@@ -1,0 +1,17 @@
+{
+	"name": "html",
+	"version": "1.0.0",
+	"description": "HTML Boilerplate",
+	"main": "pages/index.html",
+	"license": "MIT",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write . --ignore-path .prettierignore"
+	},
+	"devDependencies": {
+		"prettier": "2.8.6",
+		"@html-eslint/eslint-plugin": "^0.17.2",
+		"@html-eslint/parser": "^0.17.1",
+		"eslint": "^8.36.0"
+	}
+}

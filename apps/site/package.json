@@ -8,6 +8,7 @@
       "start": "next start",
       "lint": "next lint",
       "format": "prettier --write . --ignore-path .prettierignore",
+      "css_build": "tailwindcss -i ./app/globals.css -o ./tailwind.css --minify",
       "cypress": "cypress open"
    },
    "dependencies": {

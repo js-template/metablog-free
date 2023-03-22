@@ -1,0 +1,12 @@
+/*Google font add*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Source+Serif+Pro:wght@400;600;700&display=swap,family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/*Font family add a variable*/
+
+:root {
+	--font-family: 'Open Sans', sans-serif;
+	--font-work-sans: 'Work Sans', sans-serif;
+	--font-roboto: 'Roboto', sans-serif;
+	--font-source-serif-pro: 'Source Serif Pro', serif;
+}
