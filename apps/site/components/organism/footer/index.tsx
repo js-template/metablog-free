@@ -5,6 +5,14 @@ import NewsLetter from '@/components/molecules/newsletter/NewsLetter'
 import useMode from '@/utils/themeMode'
 import { Favicon } from '@/components/organism/header'
 
+/**
+ * Our Footer is a reusable UI component that used to represent bottom section of any website.
+ *
+ * @property website details, email, phone number, some necessary link and a newsletter component.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
+
 const Footer = () => {
    const { lightMode } = useMode()
 
