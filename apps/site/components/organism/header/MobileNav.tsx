@@ -2,6 +2,14 @@ import { headerData } from '@/data/headerData'
 import Link from 'next/link'
 import React from 'react'
 
+/**
+ * Our MobileNav is a reusable UI component that used to represent navbar section of any website in mobile version.
+ *
+ * @property website logo, all page title with navigation link, search field.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
+
 interface SidebarLayoutProps {
    sidebarOpen: boolean
    setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>

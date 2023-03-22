@@ -1,5 +1,13 @@
 import React from 'react'
 
+/**
+ * Our PostOverlayCard is a reusable UI component used to display a post as a card format.
+ *
+ * @property featured image, category name, a heading, author image, author name, and publication date.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
+
 const PostOverlayCard = () => {
    return (
       <div className="card relative font-work">

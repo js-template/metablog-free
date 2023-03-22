@@ -5,6 +5,13 @@ import { headerData } from '@/data/headerData'
 import useMode from '@/utils/themeMode'
 import MobileNav from './MobileNav'
 
+/**
+ * Our Header is a reusable UI component that used to represent top navbar section of any website.
+ *
+ * @property website logo, all page title with navigation link, search field  and a theme changing button.
+ *
+ * @returns React component that can be easily integrated into any web application.
+ */
 const Header = () => {
    const { theme, setTheme, themes, hydrationError } = useMode()
 
