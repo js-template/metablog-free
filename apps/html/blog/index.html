@@ -7,8 +7,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!--	tailwind css -->
-		<link rel="stylesheet" href="./main.css" />
-		<title>Home Page | MetaBlog</title>
+		<link rel="stylesheet" href="../main.css" />
+		<title>Blog Page | MetaBlog</title>
 	</head>
 	<body>
 		<!-- header section start  -->
@@ -17,56 +17,64 @@
 
 		<!-- main section start  -->
 		<main class="container mx-auto">
+			<!-- page info section start  -->
+
+			<div class="py-4 bg-base-100 text-center font-work">
+				<h1 class="text-base-content text-3xl font-semibold">Page Title</h1>
+				<div class="text-base breadcrumbs text-base-content/80 font-work mt-2 flex items-center justify-center">
+					<ul>
+						<li>
+							<a href="/" class="hover:text-primary transition hover:duration-300 font-medium text-base">Home</a>
+						</li>
+						<li>
+							<a href="/" class="hover:text-primary transition hover:duration-300 font-medium text-base">Link One</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- page info section end  -->
+
 			<!-- banner section start  -->
 
-			<section>
-				<div class="relative rounded-xl font-work">
-					<img width="1216" height="600" alt="banner image" src="https://placehold.it/1216x600" class="rounded-xl" />
-					<div class="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-[0_12px_24px_-6px] shadow-base-content/20">
-						<div class="w-fit text-primary-content px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-4 font-medium">Technology</div>
+			<section class="mt-12">
+				<div class="card relative font-work">
+					<figure>
+						<img width="1216" height="450" alt="banner image" src="https://placehold.it/1216x450" class="rounded-xl" />
+					</figure>
+					<div class="card-body p-2 md:p-10 absolute bottom-0 w-full md:w-8/12 z-20">
+						<div class="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4 font-medium">Technology</div>
 						<h3>
-							<a href="/single-post/index.html" class="text-base-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition-all hover:duration-500">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							<a href="/single-post/index.html" class="text-neutral-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition hover:duration-500">The Impact of Technology on the Workplace: How Technology is Changing</a>
 						</h3>
-						<div class="mt-6 flex items-center gap-5">
+						<div class="mt-3 md:mt-6 flex items-center gap-5 text-neutral-content">
 							<div class="flex items-center gap-3">
 								<div class="avatar">
 									<div class="w-9 rounded-full">
 										<img src="https://placehold.it/100x100" alt="avatar" />
 									</div>
 								</div>
-								<h6>
-									<a href="/author/index.html" class="text-base-content/60 text-xs md:text-base font-medium hover:text-primary transition hover:duration-300">Jason Francisco</a>
-								</h6>
+								<h5>
+									<a href="/author/index.html" class="text-xs md:text-base font-medium hover:text-primary transition hover:duration-300">Jason Francisco</a>
+								</h5>
 							</div>
-							<p class="text-base-content/60 text-xs md:text-base">August 20, 2022</p>
+							<p class="text-xs md:text-base">August 20, 2022</p>
 						</div>
 					</div>
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
 				</div>
 			</section>
 
 			<!-- banner section end  -->
 
-			<!-- Advertisement section start  -->
-			<section class="mt-36 flex items-center justify-center">
-				<div class="w-11/12 lg:w-8/12">
-					<div class="py-4 bg-base-content/10 text-base-content/60 text-center rounded-xl font-work">
-						<p class="text-sm">Advertisement</p>
-						<p class="text-xl font-semibold leading-6">You can place ads</p>
-						<p class="text-lg leading-[26px]">750x100</p>
-					</div>
-				</div>
-			</section>
-			<!-- Advertisement section end  -->
+			<!-- all post section start  -->
 
-			<!-- latest post section start  -->
-
-			<section class="mt-20">
-				<h3 class="text-base-content font-bold text-2xl mb-8 font-work leading-8">Latest Post</h3>
+			<section class="mt-12">
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 					<!-- single card section start  -->
 					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
 						<figure>
-							<img src="https://placehold.it/360x240" alt="email" class="rounded-xl" width="360" height="240" />
+							<img src="https://placehold.it/360x240" alt="email" class="rounded-xl" width="{360}" height="{240}" />
 						</figure>
 						<div class="card-body py-6 px-2">
 							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-medium">Technology</span>
@@ -299,13 +307,13 @@
 					<!-- single card section end  -->
 				</div>
 				<div class="flex items-center justify-center w-full mt-8">
-					<a href="/blog/index.html" class="btn btn-outline btn-secondary text-secondary-content/60 font-work font-medium text-base">View All Post</a>
+					<a href="#" class="btn btn-outline btn-secondary text-secondary-content/60 font-work font-medium text-base">Load More</a>
 				</div>
 			</section>
 
-			<!-- latest post section end  -->
-
+			<!-- all post section end  -->
 			<!-- Advertisement section start  -->
+
 			<section class="mt-20 flex items-center justify-center">
 				<div class="w-11/12 lg:w-8/12">
 					<div class="py-4 bg-base-content/10 text-base-content/60 text-center rounded-xl font-work">
@@ -315,6 +323,7 @@
 					</div>
 				</div>
 			</section>
+
 			<!-- Advertisement section end  -->
 		</main>
 		<!-- main section end  -->
@@ -322,6 +331,8 @@
 		<!-- footer section start  -->
 		<footer id="footer"></footer>
 		<!-- footer section end  -->
-		<script src="js/footer.js"></script>
+
+		<!-- javascript  script tag  -->
+		<script src="../js/footer.js"></script>
 	</body>
 </html>
