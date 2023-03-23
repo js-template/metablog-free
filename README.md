@@ -1,3 +1,4 @@
+# Next.js Blog Template Free
 ## Getting Started
 
 This is the instructions on setting up this project locally.
