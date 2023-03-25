@@ -4,7 +4,8 @@ Metablog is a versatile blog template that utilizes Next.js, Tailwind CSS, and d
 
 
 ### Template Preview
-![Home Page](https://user-images.githubusercontent.com/6657014/227729241-18a445b9-5a58-4b53-8175-3ded957b477e.png)
+
+[metablog-free.webm](https://user-images.githubusercontent.com/6657014/227731506-5654111d-7da9-4a81-a0ab-9366249464ea.webm)
 
 
 ### Project structure
