@@ -1,8 +1,11 @@
-# Next.js Blog Template Free
-## Getting Started
+# Next.js Blog Template with Typescript, Tailwind CSS, DaisyUI
 
-This is the instructions on setting up this project locally.
-To run the project locally follow these simple following steps.
+Metablog is a versatile blog template that utilizes Next.js, Tailwind CSS, and daisyUI. With Metablog, you can easily create your own Next.js blog template.
+
+
+### Template Preview
+![Home Page](https://user-images.githubusercontent.com/6657014/227729241-18a445b9-5a58-4b53-8175-3ded957b477e.png)
+
 
 ### Project structure
 
@@ -14,7 +17,7 @@ The project is structured as a monorepo and includes the following packages:
 
 ### Prerequisites
 
-Please make sure that you have latest version of pnpm, npm or yarn installed in your system. You can install the latest version of pnpm, npm or yarn by running the following command in your terminal:
+Please make sure that you have latest version of pnpm. You can install the latest version of pnpm, npm or yarn by running the following command in your terminal:
 
 -  pnpm Installation
 
@@ -22,39 +25,9 @@ Please make sure that you have latest version of pnpm, npm or yarn installed in 
 npm install pnpm@latest -g
 ```
 
--  npm Installation
-
-```sh
-npm install npm@latest -g
-```
-
--  yarn Installation
-
-```sh
-npm install yarn@latest -g
-```
-
 ### Installation
+To install, simply fork the repository on GitHub and copy it to your local machine. From the root directory, run `pnpm install` to install dependencies, and then run pnpm dev to start the development mode.
 
-Installing the project is easy and straight forward. If you're using pnpm, simply run the following command in your terminal from project root:
-
-```sh
-pnpm install
-```
-
-If you're using npm, the command will be:
-
-```sh
-npm install
-```
-
-If you're using yarn, the command will be:
-
-```sh
-yarn install
-```
-
-That's it! The package will now be installed and ready for use in your project. You can then import the package and use its components in your code. Please make sure that you have latest version of pnpm, npm or yarn installed in your system."
 
 ### Build
 
@@ -65,14 +38,6 @@ cd my-project
 pnpm run build
 ```
 
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-project
-pnpm run dev
-```
 
 ## Useful Links
 
