@@ -4,6 +4,8 @@ Metablog is a versatile blog template that utilizes Next.js, Tailwind CSS, and d
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/js-template/metablog-free&project-name=metablog-free&dir=apps/site)
 
+### Pro Version- [Metablog Pro](https://jstemplate.net/item/next-js-blog-template)
+
 
 ### Template Preview
 
