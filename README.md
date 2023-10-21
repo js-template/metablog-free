@@ -1,8 +1,7 @@
-# Next.js Blog Template with Typescript, Tailwind CSS, DaisyUI
+# Free Nextjs Blog Template
+## Teck Stack- Next.js, Typescript, Tailiwind CSS, DaisyUI
 
-Metablog is a versatile blog template that utilizes Next.js, Tailwind CSS, and daisyUI. With Metablog, you can easily create your own Next.js blog template.
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/js-template/metablog-free&project-name=metablog-free&dir=apps/site)
+Metablog is a versatile blog template that utilizes Next.js, Tailwind CSS, and daisyUI. With Metablog, you can easily create your own Next.js blog.
 
 ### Pro Version- [Metablog Pro](https://jstemplate.net/item/next-js-blog-template)
 
@@ -42,6 +41,9 @@ To build all apps and packages, run the following command:
 cd my-project
 pnpm run build
 ```
+
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/js-template/metablog-free&project-name=metablog-free&dir=apps/site)
 
 
 ## Useful Links
