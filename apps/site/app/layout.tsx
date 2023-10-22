@@ -53,18 +53,14 @@ export default function RootLayout({
          <body>
             <Providers>
                <GlobalProvider>
+                  <div id="fb-root"></div>
+                  <div id="fb-customer-chat" className="fb-customerchat">
+                  </div>
                   <Header />
                   {children}
                   <Footer />
                   <Script strategy='lazyOnload'>
                      {`
-                     <!-- Messenger Plugin chat Code -->
-                     <div id="fb-root"></div>
-                 
-                     <!-- Your Plugin chat code -->
-                     <div id="fb-customer-chat" class="fb-customerchat">
-                     </div>
-                 
                      <script>
                        var chatbox = document.getElementById('fb-customer-chat');
                        chatbox.setAttribute("page_id", "141362319064958");
