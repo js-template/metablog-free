@@ -10,6 +10,7 @@ import { GlobalProvider } from '@/context/store'
 import Header from '@/components/organism/header'
 import Footer from '@/components/organism/footer'
 import { Providers } from '@/utils/themeMode' // Plus Jakarta Sans font family with 4 weights and 2 styles
+import Script from 'next/script'
 
 // Plus Jakarta Sans font family with 4 weights and 2 styles
 const Jakarta_Sans = Plus_Jakarta_Sans({
@@ -55,6 +56,40 @@ export default function RootLayout({
                   <Header />
                   {children}
                   <Footer />
+                  <Script>
+                     {`
+                     <!-- Messenger Plugin chat Code -->
+                     <div id="fb-root"></div>
+                 
+                     <!-- Your Plugin chat code -->
+                     <div id="fb-customer-chat" class="fb-customerchat">
+                     </div>
+                 
+                     <script>
+                       var chatbox = document.getElementById('fb-customer-chat');
+                       chatbox.setAttribute("page_id", "141362319064958");
+                       chatbox.setAttribute("attribution", "biz_inbox");
+                     </script>
+                 
+                     <!-- Your SDK code -->
+                     <script>
+                       window.fbAsyncInit = function() {
+                         FB.init({
+                           xfbml            : true,
+                           version          : 'v18.0'
+                         });
+                       };
+                 
+                       (function(d, s, id) {
+                         var js, fjs = d.getElementsByTagName(s)[0];
+                         if (d.getElementById(id)) return;
+                         js = d.createElement(s); js.id = id;
+                         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                         fjs.parentNode.insertBefore(js, fjs);
+                       }(document, 'script', 'facebook-jssdk'));
+                     </script>
+                     `}
+                  </Script>
                </GlobalProvider>
             </Providers>
          </body>
