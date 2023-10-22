@@ -56,7 +56,7 @@ export default function RootLayout({
                   <Header />
                   {children}
                   <Footer />
-                  <Script>
+                  <Script strategy='lazyOnload'>
                      {`
                      <!-- Messenger Plugin chat Code -->
                      <div id="fb-root"></div>
