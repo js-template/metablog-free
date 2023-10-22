@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-
+import Image from 'next/image'
 /**
  * Our PostCard is a reusable UI component used to display a post as a card format.
  *
@@ -13,7 +13,7 @@ const PostCard = () => {
    return (
       <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
          <figure>
-            <img
+            <Image
                src="https://placehold.it/360x240"
                alt="email"
                className={`rounded-xl`}
@@ -38,7 +38,10 @@ const PostCard = () => {
                <div className=" flex items-center gap-3">
                   <div className="avatar">
                      <div className="w-9 rounded-full">
-                        <img src="https://placehold.it/100x100" alt="avatar" />
+                        <Image
+                           src="https://placehold.it/100x100"
+                           alt="avatar"
+                        />
                      </div>
                   </div>
                   <h5>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 /**
  * Our AuthorInfo is a reusable UI component that can be used to represent user details information.
  *
@@ -15,7 +15,7 @@ const AuthorInfo = () => {
          <div className="flex items-center justify-center gap-4">
             <div className="avatar">
                <div className="w-16 rounded-full">
-                  <img
+                  <Image
                      src="https://placehold.it/100x100"
                      width={64}
                      height={64}
@@ -45,13 +45,14 @@ const AuthorInfo = () => {
                   target="_blank"
                   key={index}
                   className="bg-secondary text-secondary-content hover:text-primary-content w-8 h-8 flex justify-center items-center rounded-md hover:bg-primary transition duration-300 ease-in-out"
-                  legacyBehavior>
+                  legacyBehavior
+               >
                   {item?.icon()}
                </Link>
             ))}
          </div>
       </div>
-   );
+   )
 }
 
 export default AuthorInfo

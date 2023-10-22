@@ -52,17 +52,15 @@ export default function RootLayout({
          className={`${source_Serif_Pro.variable} ${Jakarta_Sans.variable} ${work_Sans.variable} font-sans`}
       >
          <body>
-            
             <Providers>
                <GlobalProvider>
                   <div id="fb-root"></div>
-                  <div id="fb-customer-chat" className="fb-customerchat">
-                  </div>
+                  <div id="fb-customer-chat" className="fb-customerchat"></div>
                   <Header />
                   {children}
                   <Footer />
-                 
-                  <Script strategy='lazyOnload'>
+
+                  <Script id="my-script" strategy="lazyOnload">
                      {`
                      var chatbox = document.getElementById('fb-customer-chat');
                      chatbox.setAttribute("page_id", "141362319064958");

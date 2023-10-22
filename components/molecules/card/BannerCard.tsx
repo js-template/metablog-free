@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-
+import Image from 'next/image'
 /**
  * Our BannerCard is a reusable UI component used to display a top section of our website
  *
@@ -12,7 +12,7 @@ import React from 'react'
 const BannerCard = () => {
    return (
       <div className="relative rounded-xl font-work mb-24">
-         <img
+         <Image
             width="1216"
             height="600"
             alt={`banner_image`}
@@ -36,7 +36,10 @@ const BannerCard = () => {
                <div className=" flex items-center gap-3">
                   <div className="avatar">
                      <div className="w-9 rounded-full">
-                        <img src="https://placehold.it/100x100" alt="avatar" />
+                        <Image
+                           src="https://placehold.it/100x100"
+                           alt="avatar"
+                        />
                      </div>
                   </div>
                   <h6>

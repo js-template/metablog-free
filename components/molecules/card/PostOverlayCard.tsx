@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 /**
  * Our PostOverlayCard is a reusable UI component used to display a post as a card format.
  *
@@ -13,7 +13,7 @@ const PostOverlayCard = () => {
       <div className="card relative font-work">
          {/* Card Image */}
          <figure>
-            <img
+            <Image
                width="1216"
                height="450"
                alt={`banner_image`}
@@ -38,7 +38,10 @@ const PostOverlayCard = () => {
                <div className=" flex items-center gap-3">
                   <div className="avatar">
                      <div className="w-9 rounded-full">
-                        <img src="https://placehold.it/100x100" alt="avatar" />
+                        <Image
+                           src="https://placehold.it/100x100"
+                           alt="avatar"
+                        />
                      </div>
                   </div>
                   <h5>
