@@ -1,4 +1,3 @@
-import Advertisement from '@/components/organism/advertisement/Advertisement'
 import BannerCard from '@/components/molecules/card/BannerCard'
 import PostCard from '@/components/molecules/card/PostCard'
 import Link from 'next/link'
