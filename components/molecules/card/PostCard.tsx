@@ -41,6 +41,8 @@ const PostCard = () => {
                         <Image
                            src="https://placehold.it/100x100"
                            alt="avatar"
+                           width="100"
+                           height="100"
                         />
                      </div>
                   </div>

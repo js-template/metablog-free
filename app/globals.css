@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
    /*   all heading Work Sans */
    h1,
    h2,
@@ -14,10 +15,29 @@
       font-weight: 600;
    }
 
+   .ale {
+      font-family: var(--font-alegreya);
+      font-weight: 400;
+      font-size: 1rem;
+   }
+
    /*   all body text Source Sans Pro */
    body {
       font-family: var(--font-source-serif-pro);
       font-weight: 400;
       font-size: 1rem;
+   }
+
+   .line {
+      height: 5px;
+      background: #FFEE90;
+   }
+
+   .test {
+      position: relative;
+      top: 36px;
+      background: #fff;
+      display: inline-block;
+      padding: 0 20px;
    }
 }

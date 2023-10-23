@@ -9,41 +9,51 @@ export const metadata = {
 
 export default function Home() {
    return (
-      <main className="container mx-auto">
-         {/* Banner Component */}
-         <section>
-            <BannerCard />
-         </section>
+      <>
+         <main className="container mx-auto">
+            <div className="relative flex py-5 items-center px-4">
+               <div className="flex-grow border-t border-gray-400"></div>
+               <div className="flex-shrink mx-16 text-[#023e47] text-3xl ale">
+                  <div className="text-center">
+                     BUFF VĂN CÙNG POWERPUFF GIRLS
+                  </div>
+                  <div className="text-center text-xs italic">
+                     #vanhoc#2k6#thpt
+                  </div>
+               </div>
+               <div className="flex-grow border-t border-gray-400"></div>
+            </div>
+            {/* <div className="flex-grow border-t border-gray-400 mt-4 mb-8"></div> */}
 
-         {/* Advertisement Component
-         <section className="pt-12">
+            <section>
+               <BannerCard />
+            </section>
+
+            {/* Latest Post */}
+            <section className="my-20">
+               <h3 className="text-base-content font-bold text-2xl mb-8 font-work leading-8">
+                  Latest Post
+               </h3>
+               <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: any) => (
+                     <PostCard key={item} />
+                  ))}
+               </div>
+               <div className="flex items-center justify-center w-full mt-8">
+                  <Link
+                     href={`/blog`}
+                     className="btn btn-outline btn-secondary text-secondary-content/60 font-work font-medium text-base"
+                  >
+                     View All Post
+                  </Link>
+               </div>
+            </section>
+
+            {/* Advertisement Component */}
+            {/* <section className="mb-24">
             <Advertisement />
          </section> */}
-
-         {/* Latest Post */}
-         <section className="my-20">
-            <h3 className="text-base-content font-bold text-2xl mb-8 font-work leading-8">
-               Latest Post
-            </h3>
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: any) => (
-                  <PostCard key={item} />
-               ))}
-            </div>
-            <div className="flex items-center justify-center w-full mt-8">
-               <Link
-                  href={`/blog`}
-                  className="btn btn-outline btn-secondary text-secondary-content/60 font-work font-medium text-base"
-               >
-                  View All Post
-               </Link>
-            </div>
-         </section>
-
-         {/* Advertisement Component */}
-         {/* <section className="mb-24">
-            <Advertisement />
-         </section> */}
-      </main>
+         </main>
+      </>
    )
 }
