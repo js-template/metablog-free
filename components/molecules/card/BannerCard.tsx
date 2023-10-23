@@ -28,7 +28,7 @@ const BannerCard = () => {
                   href="/"
                   className="text-base-content font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition-all hover:duration-500"
                >
-                  "Văn học là nhân học" - M. Gorki
+                  &quot;Văn học là nhân học&quot; - M. Gorki
                </Link>
             </h3>
             <div className="mt-6 flex items-center gap-5">
