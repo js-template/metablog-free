@@ -19,7 +19,7 @@ const BannerCard = () => {
             src="/coverbanner.jpg"
             className="rounded-xl"
          />
-         <div className="absolute -bottom-32 left-[40%] md:left-[50%] lg:left-[70%] rounded-xl p-4 md:p-10 bg-base-100 w-[50%] md:w-[55%] lg:w-1/3 shadow-[0_12px_24px_-6px] shadow-base-content/40 opacity-70 hover:opacity-100 float-right hover:bg-gradient-to-tr ">
+         <div className="absolute -bottom-32 left-[40%] md:left-[50%] lg:left-[70%] rounded-xl p-4 md:p-10 bg-base-100 w-[50%] md:w-[55%] lg:w-1/3 shadow-[0_12px_24px_-6px] shadow-base-content/40 opacity-70 hover:opacity-100 float-right hover:bg-gradient-to-tr transition duration-500 hover:scale-110">
             <div className="w-fit text-primary-content px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-4 font-medium">
                Châm ngôn
             </div>

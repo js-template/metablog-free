@@ -8,15 +8,7 @@ export const headerData = [
       link: '/blog',
    },
    {
-      name: 'Single Post',
-      link: '/single-post',
-   },
-   {
-      name: 'Author',
-      link: '/author',
-   },
-   {
-      name: 'Contact',
-      link: '#',
+      name: 'About',
+      link: '/about',
    },
 ]
