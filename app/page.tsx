@@ -52,9 +52,9 @@ export default function Home() {
                <h3 className="text-base-content font-bold text-2xl mb-8 font-work leading-8">
                   Latest Post
                </h3>
-               <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transform ">
+               <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr] gap-8  ">
                   {posts.map((post, idx) => (
-                     <div key={idx}>
+                     <div key={idx} className='h-full'>
                         <PostCard
                            key={idx}
                            title={post.meta.title}

@@ -18,7 +18,7 @@ interface Props {
 }
 const PostCard = ({ title, description, date, slug, image }: Props) => {
    return (
-      <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work hover:scale-110 ">
+      <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work hover:scale-110 h-full ">
          <figure>
             <Image
                src={image}
@@ -28,7 +28,7 @@ const PostCard = ({ title, description, date, slug, image }: Props) => {
                height={240}
             />
          </figure>
-         <div className="card-body py-6 px-2">
+         <div className="card-body py-6 px-2 h-full">
             <span className="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-medium">
                Văn học
             </span>
