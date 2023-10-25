@@ -6,7 +6,6 @@ import useMode from '@/utils/themeMode'
 import MobileNav from './MobileNav'
 import Image from 'next/image'
 import Lottie from 'react-lottie'
-
 /**
  * Our Header is a reusable UI component that used to represent top navbar section of any website.
  *

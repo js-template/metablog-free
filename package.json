@@ -38,6 +38,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/react-lottie": "^1.2.8",
     "autoprefixer": "^10.4.14",
     "cypress": "^13.3.2",
     "postcss": "^8.4.21",
