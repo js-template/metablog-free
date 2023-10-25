@@ -4,7 +4,11 @@ import React from 'react'
 import NewsLetter from '@/components/molecules/newsletter/NewsLetter'
 import useMode from '@/utils/themeMode'
 import { Favicon } from '@/components/organism/header'
+import Image from 'next/image'
 
+import fbLogo from '@/public/facebook.svg'
+import envelopeLogo from '@/public/envelope-solid.svg'
+import linkLogo from '@/public/link-solid.svg'  
 /**
  * Our Footer is a reusable UI component that used to represent bottom section of any website.
  *
@@ -25,31 +29,69 @@ const Footer = () => {
                      About
                   </h5>
                   <p className="mt-3 text-base text-base-content/70 mb-6">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna
-                     aliqua. Ut enim ad minim veniam
+                     Tụi mình là nhóm Powerpuff Girls đến từ KNP003.<br></br>
+                     <br></br>
+                     Trang web được tạo ra phần là dự án kết thúc học phần môn
+                     Design Thinking và phần là mong muốn được giúp mọi người
+                     tiếp cận với kiến thức môn Văn một cách dễ dàng và thuận
+                     tiện hơn với kinh nghiệm của bản thân.<br></br>
+                     <br></br>
+                     GHVD: Cô Đỗ Thị Kim Thanh.
                   </p>
                   <div>
                      <a
-                        href="mailto:info@jstemplate.net"
+                        href="buffvancungpowerpuffgirls@gmail.com"
                         className="font-semibold text-base-content text-base"
                      >
                         Email :{' '}
                         <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
-                           info@jstemplate.net
+                           buffvancungpowerpuffgirls@gmail.com
                         </span>
                      </a>
-                  </div>
-                  <div className="mt-1">
-                     <a
-                        href="tel:880123456789"
-                        className="font-semibold text-base-content text-base"
-                     >
-                        Phone :{' '}
-                        <span className="text-base-content/70 font-normal hover:text-primary hover:duration-300 transition">
-                           880 123 456 789
-                        </span>
-                     </a>
+                     <div className="flex gap-3 my-4">
+                        <div className="rounded-full bg-primary hover:scale-125 flex justify-center items-center p-2">
+                           <Link
+                              href="https://www.facebook.com/puffvancungpowerpuffgirls"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                           >
+                              <Image
+                                 src={fbLogo}
+                                 alt="Facebook Logo"
+                                 height={20}
+                                 width={20}
+                              />
+                           </Link>
+                        </div>
+                        <div className="rounded-full bg-primary hover:scale-125 flex justify-center items-center p-2">
+                           <Link
+                              href="https://forms.gle/TFoZib75AkZAVWMk7"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                           >
+                              <Image
+                                 src={envelopeLogo}
+                                 alt="Mail Logo"
+                                 height={20}
+                                 width={20}
+                              />
+                           </Link>
+                        </div>
+                        <div className="rounded-full bg-primary hover:scale-125 flex justify-center items-center p-2">
+                           <Link
+                              href="https://forms.gle/iYxSP3APiTMEsX9d9"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                           >
+                              <Image
+                                 src={linkLogo}
+                                 alt="Link Logo"
+                                 height={20}
+                                 width={20}
+                              />
+                           </Link>
+                        </div>
+                     </div>
                   </div>
                </div>
                <div className="flex justify-between lg:justify-center lg:gap-20 col-span-12 lg:col-span-5">
@@ -63,7 +105,8 @@ const Footer = () => {
                               <Link
                                  href={item.link}
                                  className="link link-hover text-base text-base-content/70 hover:text-primary transition hover:duration-300"
-                                 legacyBehavior>
+                                 legacyBehavior
+                              >
                                  {item.name}
                               </Link>
                            </div>
@@ -80,7 +123,8 @@ const Footer = () => {
                               <Link
                                  href={item.link}
                                  className="link link-hover text-base text-base-content/70 hover:text-primary transition hover:duration-300"
-                                 legacyBehavior>
+                                 legacyBehavior
+                              >
                                  {item.name}
                               </Link>
                            </div>
@@ -94,16 +138,23 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between py-8 bg-base-200 border-t border-base-content/10">
                <div className="flex items-center gap-2.5">
-                  <Link href="/" >
+                  <Link href="/">
                      {/* <Favicon className={`text-base-content`} /> */}
-                     Hello
+                     <Image
+                        src={'/lg2.png'}
+                        alt="Logo"
+                        width={128}
+                        height={32}
+                        className="cursor-pointer"
+                     />
                   </Link>
                   <div>
                      <h4 className="text-xl text-base-content font-sans">
-                        Meta<strong>Blog</strong>
+                        POWER<strong>BLOG</strong>
                      </h4>
                      <p className="mt-0.5 text-base-content/70 text-base">
-                        © JS Template 2023. All Rights Reserved.
+                        © Buff Văn cùng Powerpuff Girls 2023, All Rights
+                        Reserved.
                      </p>
                   </div>
                </div>
@@ -130,7 +181,7 @@ const Footer = () => {
             </div>
          </div>
       </footer>
-   );
+   )
 }
 
 export default Footer

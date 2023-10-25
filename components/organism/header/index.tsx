@@ -5,6 +5,7 @@ import { headerData } from '@/data/headerData'
 import useMode from '@/utils/themeMode'
 import MobileNav from './MobileNav'
 import Image from 'next/image'
+import Lottie from 'react-lottie'
 
 /**
  * Our Header is a reusable UI component that used to represent top navbar section of any website.
@@ -15,11 +16,18 @@ import Image from 'next/image'
  */
 const Header = () => {
    const { theme, setTheme, themes, hydrationError } = useMode()
-
+   const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: require('@/public/home.json'),
+      rendererSettings: {
+         preserveAspectRatio: 'xMidYMid slice',
+      },
+   }
    const [sidebarOpen, setSidebarOpen] = React.useState<boolean>(false)
 
    return (
-      <header className="py-5">
+      <header className="py-0 sticky z-50 top-0 bg-base-100 shadow-xl">
          <div className="container mx-auto font-work">
             <div className="navbar grid grid-cols-12">
                <div className="col-span-3">
@@ -27,9 +35,9 @@ const Header = () => {
                      <Image
                         src={'/laugau.png'}
                         alt="Logo"
-                        width={128}
-                        height={32}
-                        className="cursor-pointer"
+                        width={168}
+                        height={128}
+                        className="cursor-pointer hover:scale-150 hover:rotate-[360deg] duration-700"
                      />
                   </Link>
                </div>
@@ -39,9 +47,21 @@ const Header = () => {
                         <div key={index}>
                            <Link
                               href={item.link}
-                              className=" text-base text-base-content/80 hover:text-primary transition hover:font-semibold hover:scale-"
+                              className="flex items-center text-base text-base-content/80 hover:text-primary transition duration-500 hover:font-semibold hover:scale-125"
                               // legacyBehavior
                            >
+                              <Lottie
+                                 options={{
+                                    loop: true,
+                                    autoplay: true,
+                                    animationData: require(`@/public/${item.icon}`),
+                                    rendererSettings: {
+                                       preserveAspectRatio: 'xMidYMid slice',
+                                    },
+                                 }}
+                                 height={item.height}
+                                 width={item.width}
+                              />
                               {item.name}
                            </Link>
                         </div>

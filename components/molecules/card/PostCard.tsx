@@ -14,13 +14,14 @@ interface Props {
    description: string
    date: string
    slug: string
+   image: string
 }
-const PostCard = ({ title, description, date, slug }: Props) => {
+const PostCard = ({ title, description, date, slug, image }: Props) => {
    return (
       <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work hover:scale-110 ">
          <figure>
             <Image
-               src="https://placehold.it/360x240"
+               src={image}
                alt="email"
                className={`rounded-xl`}
                width={360}

@@ -61,6 +61,7 @@ export default function Home() {
                            description={post.meta.description}
                            date={post.meta.date}
                            slug={`/mdx/${post.slug}`}
+                           image={post.meta.image}
                         />
                      </div>
                   ))}
@@ -79,7 +80,7 @@ export default function Home() {
             {/* <section className="mb-24">
             <Advertisement />
          </section> */}
-            <div className="py-2">
+            {/* <div className="py-2">
                {posts.map((blog) => (
                   <Link href={'/mdx/' + blog.slug} passHref key={blog.slug}>
                      <div className="py-2 flex justify-between align-middle gap-2">
@@ -99,7 +100,7 @@ export default function Home() {
                      </div>
                   </Link>
                ))}
-            </div>
+            </div> */}
          </main>
       </>
    )

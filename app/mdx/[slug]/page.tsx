@@ -34,6 +34,7 @@ export default function Page({ params }: any) {
       >
          <h1>{props.fontMatter.title}</h1>
          <MDXRemote source={props.content} />
+         
       </article>
    )
 }
