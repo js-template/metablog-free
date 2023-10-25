@@ -13,8 +13,9 @@ interface Props {
    title: string
    description: string
    date: string
+   slug: string
 }
-const PostCard = ({ title, description, date }: Props) => {
+const PostCard = ({ title, description, date, slug }: Props) => {
    return (
       <div className="card w-fit p-4 border border-base-content/10 rounded-xl font-work hover:scale-110 ">
          <figure>
@@ -32,7 +33,7 @@ const PostCard = ({ title, description, date }: Props) => {
             </span>
             <h3>
                <Link
-                  href="/single-post"
+                  href={slug}
                   className="text-base-content hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 text-ellipsis "
                >
                   {description}
@@ -52,7 +53,7 @@ const PostCard = ({ title, description, date }: Props) => {
                   </div>
                   <h5>
                      <Link
-                        href="/"
+                        href="#"
                         className="text-base font-medium hover:text-primary transition hover:duration-300"
                      >
                         PowerPuffGirls

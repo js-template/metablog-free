@@ -4,8 +4,8 @@ export const headerData = [
       link: '/',
    },
    {
-      name: 'Blog',
-      link: '/blog',
+      name: 'Contact',
+      link: '/contact',
    },
    {
       name: 'About',

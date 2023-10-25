@@ -54,14 +54,15 @@ export default function Home() {
                </h3>
                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transform ">
                   {posts.map((post, idx) => (
-                     <Link href={`/mdx/${post.slug}`} passHref key={post.slug}>
+                     <div key={idx}>
                         <PostCard
                            key={idx}
                            title={post.meta.title}
                            description={post.meta.description}
                            date={post.meta.date}
+                           slug={`/mdx/${post.slug}`}
                         />
-                     </Link>
+                     </div>
                   ))}
                </div>
                <div className="flex items-center justify-center w-full mt-8">
