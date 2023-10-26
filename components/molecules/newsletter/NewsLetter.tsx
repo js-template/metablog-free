@@ -13,10 +13,10 @@ const NewsLetter = () => {
       <div className="w-full">
          <div className="bg-base-100 py-8 px-9 rounded-xl">
             <p className="text-center text-xl font-semibold text-base-content">
-               Weekly Newsletter
+               New Posts Update
             </p>
             <p className="mt-2 text-base text-center text-base-content/60">
-               Get blog articles and offers via email
+               Nhận thông báo về các bài viết mới nhất của chúng mình.
             </p>
             <div className="relative flex items-center mt-7">
                <input
@@ -47,7 +47,7 @@ const NewsLetter = () => {
                </svg>
             </div>
             <button className="btn btn-primary py-3 text-center font-medium w-full rounded-md mt-2 text-white text-base">
-               Subscribe
+               Đăng kí
             </button>
          </div>
       </div>

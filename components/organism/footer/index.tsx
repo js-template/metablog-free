@@ -115,7 +115,7 @@ const Footer = () => {
                   </div>
                   <div>
                      <h5 className="text-base-content text-lg font-semibold font-sans">
-                        Category
+                        Others
                      </h5>
                      <div className="flex flex-col gap-y-2 mt-6">
                         {FooterDataTwo.map((item: any, index: number) => (
@@ -141,7 +141,7 @@ const Footer = () => {
                   <Link href="/">
                      {/* <Favicon className={`text-base-content`} /> */}
                      <Image
-                        src={'/lg2.png'}
+                        src={'/laugaugau.png'}
                         alt="Logo"
                         width={128}
                         height={32}
@@ -163,18 +163,21 @@ const Footer = () => {
                      href="/"
                      className="text-base border-r border-base-content/10 pr-4 hover:text-primary transition hover:duration-300"
                   >
+                     Chăm chỉ<br></br>
                      Terms of Use
                   </Link>
                   <Link
                      href="/"
                      className="text-base border-r border-base-content/10 pr-4  hover:text-primary transition hover:duration-300"
                   >
+                     Nhiệt huyết<br></br>
                      Privacy Policy
                   </Link>
                   <Link
                      href="/"
                      className="text-base hover:text-primary transition hover:duration-300"
                   >
+                     Nỗ lực<br></br>
                      Cookie Policy
                   </Link>
                </div>
