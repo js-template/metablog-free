@@ -14,9 +14,9 @@
       font-weight: 600;
    }
 
-   /*   all body text Source Sans Pro */
+   /*   all body text Source Sans 3 */
    body {
-      font-family: var(--font-source-serif-pro);
+      font-family: var(--font-source-sans-3), sans-serif;
       font-weight: 400;
       font-size: 1rem;
    }
