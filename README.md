@@ -23,7 +23,7 @@ The project is structured as a monorepo and includes the following packages:
 
 Please make sure that you have latest version of npm. You can install the latest version of npm or yarn by running the following command in your terminal:
 
--  pnpm Installation
+-  npm Installation
 
 ```sh
 npm install -g npm@latest
