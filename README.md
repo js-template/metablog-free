@@ -43,7 +43,7 @@ pnpm run build
 ```
 
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/js-template/metablog-free&project-name=metablog-free&dir=apps/site)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/mommaroodles/metablog-free&project-name=metablog-free&dir=apps/site)
 
 
 ## Useful Links
