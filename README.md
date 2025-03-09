@@ -21,16 +21,16 @@ The project is structured as a monorepo and includes the following packages:
 
 ### Prerequisites
 
-Please make sure that you have latest version of pnpm. You can install the latest version of pnpm, npm or yarn by running the following command in your terminal:
+Please make sure that you have latest version of npm. You can install the latest version of npm or yarn by running the following command in your terminal:
 
 -  pnpm Installation
 
 ```sh
-npm install pnpm@latest -g
+npm install -g npm@latest
 ```
 
 ### Installation
-To install, simply fork the repository on GitHub and copy it to your local machine. From the root directory, run `pnpm install` to install dependencies, and then run pnpm dev to start the development mode.
+To install, simply fork the repository on GitHub and copy it to your local machine. From the root directory, run `npm install` to install dependencies, and then run `npm run dev` to start the development mode.
 
 
 ### Build
