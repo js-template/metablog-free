@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+   /*   all heading Work Sans */
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      font-family: var(--font-work-sans);
+      font-weight: 600;
+   }
+
+   /*   all body text Source Sans 3 */
+   body {
+      font-family: var(--font-source-sans-3), sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+   }
+}
